@@ -4,6 +4,8 @@
 
 #include "db/version_edit.h"
 
+#include <limits>
+
 #include "db/version_set.h"
 #include "util/coding.h"
 
@@ -20,7 +22,9 @@ enum Tag {
   kDeletedFile = 6,
   kNewFile = 7,
   // 8 was used for large value refs
-  kPrevLogNumber = 9
+  kPrevLogNumber = 9,
+  kNewFileWithMetadata = 10,
+  kNewFileWithReferences = 11
 };
 
 void VersionEdit::Clear() {
@@ -75,12 +79,26 @@ void VersionEdit::EncodeTo(std::string* dst) const {
 
   for (size_t i = 0; i < new_files_.size(); i++) {
     const FileMetaData& f = new_files_[i].second;
-    PutVarint32(dst, kNewFile);
+    PutVarint32(dst, f.key_references ? kNewFileWithReferences
+                                    : (f.metadata_known ? kNewFileWithMetadata
+                                                        : kNewFile));
     PutVarint32(dst, new_files_[i].first);  // level
     PutVarint64(dst, f.number);
     PutVarint64(dst, f.file_size);
     PutLengthPrefixedSlice(dst, f.smallest.Encode());
     PutLengthPrefixedSlice(dst, f.largest.Encode());
+    if (f.metadata_known) {
+      PutVarint64(dst, f.metadata.total_entries);
+      PutVarint64(dst, f.metadata.distinct_keys);
+    }
+    if (f.key_references) {
+      assert(f.metadata_known);
+      PutVarint32(dst, f.has_ttl ? 1 : 0);
+      for (const auto& reference : *f.key_references) {
+        PutLengthPrefixedSlice(dst, reference.first);
+        PutVarint64(dst, reference.second);
+      }
+    }
   }
 }
 
@@ -176,10 +194,55 @@ Status VersionEdit::DecodeFrom(const Slice& src) {
         break;
 
       case kNewFile:
+      case kNewFileWithMetadata:
+      case kNewFileWithReferences:
+        // f is reused across records: a legacy record must not inherit the
+        // preceding new-format file's known flag or counters.
+        f = FileMetaData();
         if (GetLevel(&input, &level) && GetVarint64(&input, &f.number) &&
             GetVarint64(&input, &f.file_size) &&
             GetInternalKey(&input, &f.smallest) &&
             GetInternalKey(&input, &f.largest)) {
+          if (tag == kNewFileWithMetadata || tag == kNewFileWithReferences) {
+            if (!GetVarint64(&input, &f.metadata.total_entries) ||
+                !GetVarint64(&input, &f.metadata.distinct_keys) ||
+                f.metadata.distinct_keys > f.metadata.total_entries ||
+                (f.metadata.total_entries != 0 &&
+                 f.metadata.distinct_keys == 0)) {
+              msg = "new-file metadata";
+              break;
+            }
+            f.metadata_known = true;
+          }
+          if (tag == kNewFileWithReferences) {
+            uint32_t flags;
+            if (!GetVarint32(&input, &flags) || flags > 1 ||
+                f.metadata.distinct_keys > input.size() / 2) {
+              msg = "file key references header";
+              break;
+            }
+            f.has_ttl = flags != 0;
+            auto references = std::make_shared<FileKeyReferences>();
+            uint64_t total = 0;
+            for (uint64_t i = 0; i < f.metadata.distinct_keys; ++i) {
+              Slice user_key;
+              uint64_t count;
+              if (!GetLengthPrefixedSlice(&input, &user_key) ||
+                  !GetVarint64(&input, &count) || count == 0 ||
+                  count > std::numeric_limits<uint64_t>::max() - total) {
+                msg = "file key references";
+                break;
+              }
+              total += count;
+              references->emplace_back(user_key.ToString(), count);
+            }
+            if (msg != nullptr) break;
+            if (total != f.metadata.total_entries) {
+              msg = "file key references total";
+              break;
+            }
+            f.key_references = references;
+          }
           new_files_.push_back(std::make_pair(level, f));
         } else {
           msg = "new-file entry";
@@ -250,6 +313,14 @@ std::string VersionEdit::DebugString() const {
     r.append(f.smallest.DebugString());
     r.append(" .. ");
     r.append(f.largest.DebugString());
+    r.append(" metadata=");
+    if (f.metadata_known) {
+      AppendNumberTo(&r, f.metadata.total_entries);
+      r.append("/");
+      AppendNumberTo(&r, f.metadata.distinct_keys);
+    } else {
+      r.append("unknown");
+    }
   }
   r.append("\n}\n");
   return r;

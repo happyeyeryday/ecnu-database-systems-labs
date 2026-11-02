@@ -18,6 +18,13 @@ Status BuildTable(const std::string& dbname, Env* env, const Options& options,
                   TableCache* table_cache, Iterator* iter, FileMetaData* meta) {
   Status s;
   meta->file_size = 0;
+  meta->metadata = SourceMetadata();
+  meta->metadata_known = false;
+  meta->key_references.reset();
+  meta->has_ttl = false;
+  const auto* comparator =
+      static_cast<const InternalKeyComparator*>(options.comparator);
+  SourceMetadataBuilder metadata_builder(comparator->user_comparator());
   iter->SeekToFirst();
 
   std::string fname = TableFileName(dbname, meta->number);
@@ -33,14 +40,24 @@ Status BuildTable(const std::string& dbname, Env* env, const Options& options,
     Slice key;
     for (; iter->Valid(); iter->Next()) {
       key = iter->key();
+      ParsedInternalKey parsed;
+      if (!ParseInternalKey(key, &parsed)) {
+        s = Status::Corruption("invalid internal key while building table");
+        break;
+      }
       builder->Add(key, iter->value());
+      metadata_builder.Add(parsed.user_key, parsed.type == kTypeValueWithTTL);
     }
     if (!key.empty()) {
       meta->largest.DecodeFrom(key);
     }
 
     // Finish and check for builder errors
-    s = builder->Finish();
+    if (s.ok()) {
+      s = builder->Finish();
+    } else {
+      builder->Abandon();
+    }
     if (s.ok()) {
       meta->file_size = builder->FileSize();
       assert(meta->file_size > 0);
@@ -72,7 +89,10 @@ Status BuildTable(const std::string& dbname, Env* env, const Options& options,
   }
 
   if (s.ok() && meta->file_size > 0) {
-    // Keep it
+    meta->metadata = metadata_builder.metadata();
+    meta->metadata_known = true;
+    meta->key_references = metadata_builder.references();
+    meta->has_ttl = metadata_builder.has_ttl();
   } else {
     env->RemoveFile(fname);
   }

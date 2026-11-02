@@ -8,7 +8,9 @@
 //    data: record[count]
 // record :=
 //    kTypeValue varstring varstring         |
-//    kTypeDeletion varstring
+//    kTypeDeletion varstring               |
+//    kTypeValueWithTTL varstring varstring
+// TTL value := fixed64 absolute_expiration_micros | original_user_value.
 // varstring :=
 //    len: varint32
 //    data: uint8[len]
@@ -17,6 +19,7 @@
 
 #include "db/dbformat.h"
 #include "db/memtable.h"
+#include "db/ttl_internal.h"
 #include "db/write_batch_internal.h"
 #include "leveldb/db.h"
 #include "util/coding.h"
@@ -68,6 +71,18 @@ Status WriteBatch::Iterate(Handler* handler) const {
           return Status::Corruption("bad WriteBatch Delete");
         }
         break;
+      case kTypeValueWithTTL: {
+        if (!GetLengthPrefixedSlice(&input, &key) ||
+            !GetLengthPrefixedSlice(&input, &value)) {
+          return Status::Corruption("bad WriteBatch PutWithTTL");
+        }
+        uint64_t expiration_micros;
+        Slice user_value;
+        Status s = DecodeValueWithTTL(value, &expiration_micros, &user_value);
+        if (!s.ok()) return s;
+        handler->PutWithTTL(key, user_value, expiration_micros);
+        break;
+      }
       default:
         return Status::Corruption("unknown WriteBatch tag");
     }
@@ -108,6 +123,17 @@ void WriteBatch::Delete(const Slice& key) {
   PutLengthPrefixedSlice(&rep_, key);
 }
 
+void WriteBatchInternal::PutWithTTL(WriteBatch* batch, const Slice& key,
+                                    const Slice& value,
+                                    uint64_t expiration_micros) {
+  std::string encoded_value;
+  EncodeValueWithTTL(expiration_micros, value, &encoded_value);
+  SetCount(batch, Count(batch) + 1);
+  batch->rep_.push_back(static_cast<char>(kTypeValueWithTTL));
+  PutLengthPrefixedSlice(&batch->rep_, key);
+  PutLengthPrefixedSlice(&batch->rep_, encoded_value);
+}
+
 void WriteBatch::Append(const WriteBatch& source) {
   WriteBatchInternal::Append(this, &source);
 }
@@ -124,6 +150,13 @@ class MemTableInserter : public WriteBatch::Handler {
   }
   void Delete(const Slice& key) override {
     mem_->Add(sequence_, kTypeDeletion, key, Slice());
+    sequence_++;
+  }
+  void PutWithTTL(const Slice& key, const Slice& value,
+                  uint64_t expiration_micros) override {
+    std::string encoded_value;
+    EncodeValueWithTTL(expiration_micros, value, &encoded_value);
+    mem_->Add(sequence_, kTypeValueWithTTL, key, encoded_value);
     sequence_++;
   }
 };

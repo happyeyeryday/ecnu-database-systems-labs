@@ -21,6 +21,7 @@
 #ifndef STORAGE_LEVELDB_INCLUDE_WRITE_BATCH_H_
 #define STORAGE_LEVELDB_INCLUDE_WRITE_BATCH_H_
 
+#include <cstdint>
 #include <string>
 
 #include "leveldb/export.h"
@@ -37,6 +38,12 @@ class LEVELDB_EXPORT WriteBatch {
     virtual ~Handler();
     virtual void Put(const Slice& key, const Slice& value) = 0;
     virtual void Delete(const Slice& key) = 0;
+    // Compatibility fallback for existing handlers. Storage handlers must
+    // override this callback to preserve the absolute expiration time.
+    virtual void PutWithTTL(const Slice& key, const Slice& value,
+                            uint64_t expiration_micros) {
+      Put(key, value);
+    }
   };
 
   WriteBatch();

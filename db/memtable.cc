@@ -4,6 +4,7 @@
 
 #include "db/memtable.h"
 #include "db/dbformat.h"
+#include "db/ttl_internal.h"
 #include "leveldb/comparator.h"
 #include "leveldb/env.h"
 #include "leveldb/iterator.h"
@@ -75,6 +76,15 @@ Iterator* MemTable::NewIterator() { return new MemTableIterator(&table_); }
 
 void MemTable::Add(SequenceNumber s, ValueType type, const Slice& key,
                    const Slice& value) {
+  // Reuse the skiplist to detect an existing comparator-equivalent user key,
+  // avoiding a second per-MemTable key set. Add has a single external writer.
+  LookupKey lookup(key, kMaxSequenceNumber);
+  Table::Iterator existing(&table_);
+  existing.Seek(lookup.memtable_key().data());
+  const bool new_user_key =
+      !existing.Valid() ||
+      comparator_.comparator.user_comparator()->Compare(
+          ExtractUserKey(GetLengthPrefixedSlice(existing.key())), key) != 0;
   // Format of an entry is concatenation of:
   //  key_size     : varint32 of internal_key.size()
   //  key bytes    : char[internal_key.size()]
@@ -97,9 +107,12 @@ void MemTable::Add(SequenceNumber s, ValueType type, const Slice& key,
   std::memcpy(p, value.data(), val_size);
   assert(p + val_size == buf + encoded_len);
   table_.Insert(buf);
+  ++metadata_.total_entries;
+  if (new_user_key) ++metadata_.distinct_keys;
 }
 
-bool MemTable::Get(const LookupKey& key, std::string* value, Status* s) {
+bool MemTable::Get(const LookupKey& key, uint64_t read_time_micros,
+                   std::string* value, Status* s) {
   Slice memkey = key.memtable_key();
   Table::Iterator iter(&table_);
   iter.Seek(memkey.data());
@@ -129,6 +142,19 @@ bool MemTable::Get(const LookupKey& key, std::string* value, Status* s) {
         case kTypeDeletion:
           *s = Status::NotFound(Slice());
           return true;
+        case kTypeValueWithTTL: {
+          Slice encoded_value = GetLengthPrefixedSlice(key_ptr + key_length);
+          uint64_t expiration_micros;
+          Slice user_value;
+          *s = DecodeValueWithTTL(encoded_value, &expiration_micros, &user_value);
+          if (!s->ok()) return true;
+          if (IsExpired(expiration_micros, read_time_micros)) {
+            *s = Status::NotFound(Slice());
+          } else {
+            value->assign(user_value.data(), user_value.size());
+          }
+          return true;
+        }
       }
     }
   }

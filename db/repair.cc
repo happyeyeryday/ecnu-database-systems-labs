@@ -259,15 +259,19 @@ class Repairer {
     bool empty = true;
     ParsedInternalKey parsed;
     t.max_sequence = 0;
+    SourceMetadataBuilder metadata_builder(icmp_.user_comparator());
+    bool metadata_known = true;
     for (iter->SeekToFirst(); iter->Valid(); iter->Next()) {
       Slice key = iter->key();
       if (!ParseInternalKey(key, &parsed)) {
+        metadata_known = false;
         Log(options_.info_log, "Table #%llu: unparsable key %s",
             (unsigned long long)t.meta.number, EscapeString(key).c_str());
         continue;
       }
 
       counter++;
+      metadata_builder.Add(parsed.user_key, parsed.type == kTypeValueWithTTL);
       if (empty) {
         empty = false;
         t.meta.smallest.DecodeFrom(key);
@@ -285,6 +289,10 @@ class Repairer {
         (unsigned long long)t.meta.number, counter, status.ToString().c_str());
 
     if (status.ok()) {
+      t.meta.metadata = metadata_builder.metadata();
+      t.meta.metadata_known = metadata_known;
+      t.meta.key_references = metadata_known ? metadata_builder.references() : nullptr;
+      t.meta.has_ttl = metadata_builder.has_ttl();
       tables_.push_back(t);
     } else {
       RepairTable(fname, t);  // RepairTable archives input file.
@@ -307,8 +315,24 @@ class Repairer {
     // Copy data.
     Iterator* iter = NewTableIterator(t.meta);
     int counter = 0;
+    SourceMetadataBuilder metadata_builder(icmp_.user_comparator());
+    bool metadata_known = true;
+    bool empty = true;
+    t.max_sequence = 0;
     for (iter->SeekToFirst(); iter->Valid(); iter->Next()) {
       builder->Add(iter->key(), iter->value());
+      ParsedInternalKey parsed;
+      if (ParseInternalKey(iter->key(), &parsed)) {
+        metadata_builder.Add(parsed.user_key, parsed.type == kTypeValueWithTTL);
+        if (empty) {
+          t.meta.smallest.DecodeFrom(iter->key());
+          empty = false;
+        }
+        t.meta.largest.DecodeFrom(iter->key());
+        if (parsed.sequence > t.max_sequence) t.max_sequence = parsed.sequence;
+      } else {
+        metadata_known = false;
+      }
       counter++;
     }
     delete iter;
@@ -335,6 +359,10 @@ class Repairer {
       std::string orig = TableFileName(dbname_, t.meta.number);
       s = env_->RenameFile(copy, orig);
       if (s.ok()) {
+        t.meta.metadata = metadata_builder.metadata();
+        t.meta.metadata_known = metadata_known;
+        t.meta.key_references = metadata_known ? metadata_builder.references() : nullptr;
+        t.meta.has_ttl = metadata_builder.has_ttl();
         Log(options_.info_log, "Table #%llu: %d entries repaired",
             (unsigned long long)t.meta.number, counter);
         tables_.push_back(t);
@@ -369,7 +397,8 @@ class Repairer {
       // TODO(opt): separate out into multiple levels
       const TableInfo& t = tables_[i];
       edit_.AddFile(0, t.meta.number, t.meta.file_size, t.meta.smallest,
-                    t.meta.largest);
+                    t.meta.largest, t.meta.metadata, t.meta.metadata_known,
+                    t.meta.key_references, t.meta.has_ttl);
     }
 
     // std::fprintf(stderr,

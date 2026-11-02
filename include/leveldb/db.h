@@ -154,7 +154,7 @@ class LEVELDB_EXPORT DB {
   //    db->CompactRange(nullptr, nullptr);
   virtual void CompactRange(const Slice* begin, const Slice* end) = 0;
 
-  // TODO: Implement TTL writes. The starter returns NotSupported.
+  // Store a TTL version; DBImpl persists its absolute expiration time.
   virtual Status Put(const WriteOptions& options, const Slice& key,
                      const Slice& value, uint64_t ttl);
 };

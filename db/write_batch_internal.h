@@ -37,6 +37,10 @@ class WriteBatchInternal {
 
   static Status InsertInto(const WriteBatch* batch, MemTable* memtable);
 
+  // Store an already computed absolute expiration, never a relative TTL.
+  static void PutWithTTL(WriteBatch* batch, const Slice& key, const Slice& value,
+                         uint64_t expiration_micros);
+
   static void Append(WriteBatch* dst, const WriteBatch* src);
 };
 

@@ -10,13 +10,14 @@
 #include <vector>
 
 #include "db/dbformat.h"
+#include "db/metadata_stats.h"
 
 namespace leveldb {
 
 class VersionSet;
 
 struct FileMetaData {
-  FileMetaData() : refs(0), allowed_seeks(1 << 30), file_size(0) {}
+  FileMetaData() : refs(0), allowed_seeks(1 << 30), number(0), file_size(0) {}
 
   int refs;
   int allowed_seeks;  // Seeks allowed until compaction
@@ -24,6 +25,10 @@ struct FileMetaData {
   uint64_t file_size;    // File size in bytes
   InternalKey smallest;  // Smallest internal key served by table
   InternalKey largest;   // Largest internal key served by table
+  SourceMetadata metadata;
+  bool metadata_known = false;  // Legacy MANIFEST records have no summary.
+  std::shared_ptr<const FileKeyReferences> key_references;
+  bool has_ttl = false;
 };
 
 class VersionEdit {
@@ -61,12 +66,20 @@ class VersionEdit {
   // REQUIRES: This version has not been saved (see VersionSet::SaveTo)
   // REQUIRES: "smallest" and "largest" are smallest and largest keys in file
   void AddFile(int level, uint64_t file, uint64_t file_size,
-               const InternalKey& smallest, const InternalKey& largest) {
+               const InternalKey& smallest, const InternalKey& largest,
+               const SourceMetadata& metadata = SourceMetadata(),
+               bool metadata_known = false,
+               std::shared_ptr<const FileKeyReferences> key_references = nullptr,
+               bool has_ttl = false) {
     FileMetaData f;
     f.number = file;
     f.file_size = file_size;
     f.smallest = smallest;
     f.largest = largest;
+    f.metadata = metadata;
+    f.metadata_known = metadata_known;
+    f.key_references = std::move(key_references);
+    f.has_ttl = has_ttl;
     new_files_.push_back(std::make_pair(level, f));
   }
 

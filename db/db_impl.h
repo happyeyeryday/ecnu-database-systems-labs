@@ -12,6 +12,7 @@
 
 #include "db/dbformat.h"
 #include "db/log_writer.h"
+#include "db/metadata_stats.h"
 #include "db/snapshot.h"
 #include "leveldb/db.h"
 #include "leveldb/env.h"
@@ -39,6 +40,9 @@ class DBImpl : public DB {
   // Implementations of the DB interface
   Status Put(const WriteOptions&, const Slice& key,
              const Slice& value) override;
+  // Compute the deadline before entering the standard write pipeline.
+  Status Put(const WriteOptions&, const Slice& key, const Slice& value,
+             uint64_t ttl) override;
   Status Delete(const WriteOptions&, const Slice& key) override;
   Status Write(const WriteOptions& options, WriteBatch* updates) override;
   Status Get(const ReadOptions& options, const Slice& key,
@@ -107,9 +111,11 @@ class DBImpl : public DB {
 
   Iterator* NewInternalIterator(const ReadOptions&,
                                 SequenceNumber* latest_snapshot,
+                                uint64_t* read_time_micros,
                                 uint32_t* seed);
 
   Status NewDB();
+  Status RebuildMetadata() EXCLUSIVE_LOCKS_REQUIRED(mutex_);
 
   // Recover the descriptor from persistent storage.  May do a significant
   // amount of work to recover recently logged updates.  Any changes to
@@ -191,6 +197,9 @@ class DBImpl : public DB {
   WriteBatch* tmp_batch_ GUARDED_BY(mutex_);
 
   SnapshotList snapshots_ GUARDED_BY(mutex_);
+
+  // Published together with LastSequence and current Version changes.
+  MetadataState metadata_ GUARDED_BY(mutex_);
 
   // Set of table files to protect from deletion because they are
   // part of ongoing compactions.

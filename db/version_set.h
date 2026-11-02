@@ -72,8 +72,9 @@ class Version {
   // Lookup the value for key.  If found, store it in *val and
   // return OK.  Else return a non-OK status.  Fills *stats.
   // REQUIRES: lock is not held
-  Status Get(const ReadOptions&, const LookupKey& key, std::string* val,
-             GetStats* stats);
+  // read_time_micros is fixed by DBImpl for the entire read view.
+  Status Get(const ReadOptions&, const LookupKey& key, uint64_t read_time_micros,
+             std::string* val, GetStats* stats);
 
   // Adds "stats" into the current state.  Returns true if a new
   // compaction may need to be triggered, false otherwise.
@@ -183,6 +184,9 @@ class VersionSet {
 
   // Recover the last saved descriptor from persistent storage.
   Status Recover(bool* save_manifest);
+
+  // Startup-only: persist upgraded legacy file summaries in a fresh snapshot.
+  Status RewriteManifest(port::Mutex* mu) EXCLUSIVE_LOCKS_REQUIRED(mu);
 
   // Return the current version.
   Version* current() const { return current_; }
@@ -323,6 +327,9 @@ class Compaction {
   // Return the level that is being compacted.  Inputs from "level"
   // and "level+1" will be merged to produce a set of "level+1" files.
   int level() const { return level_; }
+  int output_level() const {
+    return level_ + 1 < config::kNumLevels ? level_ + 1 : level_;
+  }
 
   // Return the object that holds the edits to the descriptor done
   // by this compaction.

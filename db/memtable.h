@@ -8,6 +8,7 @@
 #include <string>
 
 #include "db/dbformat.h"
+#include "db/metadata_stats.h"
 #include "db/skiplist.h"
 #include "leveldb/db.h"
 #include "util/arena.h"
@@ -60,7 +61,14 @@ class MemTable {
   // If memtable contains a deletion for key, store a NotFound() error
   // in *status and return true.
   // Else, return false.
-  bool Get(const LookupKey& key, std::string* value, Status* s);
+  // An expired TTL record is a terminal hit, just like a deletion: return
+  // true with NotFound so callers do not fall back to an older version.
+  bool Get(const LookupKey& key, uint64_t read_time_micros,
+           std::string* value, Status* s);
+
+  // Read only after writes to this table have stopped (e.g. during flush).
+  // Counts include old versions, deletion markers, and expired TTL records.
+  const SourceMetadata& metadata() const { return metadata_; }
 
  private:
   friend class MemTableIterator;
@@ -80,6 +88,7 @@ class MemTable {
   int refs_;
   Arena arena_;
   Table table_;
+  SourceMetadata metadata_;
 };
 
 }  // namespace leveldb

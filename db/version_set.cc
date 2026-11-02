@@ -12,6 +12,7 @@
 #include "db/log_writer.h"
 #include "db/memtable.h"
 #include "db/table_cache.h"
+#include "db/ttl_internal.h"
 #include "leveldb/env.h"
 #include "leveldb/table_builder.h"
 #include "table/merger.h"
@@ -257,6 +258,7 @@ struct Saver {
   const Comparator* ucmp;
   Slice user_key;
   std::string* value;
+  uint64_t read_time_micros;
 };
 }  // namespace
 static void SaveValue(void* arg, const Slice& ikey, const Slice& v) {
@@ -266,9 +268,24 @@ static void SaveValue(void* arg, const Slice& ikey, const Slice& v) {
     s->state = kCorrupt;
   } else {
     if (s->ucmp->Compare(parsed_key.user_key, s->user_key) == 0) {
-      s->state = (parsed_key.type == kTypeValue) ? kFound : kDeleted;
-      if (s->state == kFound) {
+      if (parsed_key.type == kTypeValueWithTTL) {
+        uint64_t expiration_micros;
+        Slice user_value;
+        Status status = DecodeValueWithTTL(v, &expiration_micros, &user_value);
+        if (!status.ok()) {
+          s->state = kCorrupt;
+        } else if (IsExpired(expiration_micros, s->read_time_micros)) {
+          // Stop the SST search, rather than exposing an older value.
+          s->state = kDeleted;
+        } else {
+          s->state = kFound;
+          s->value->assign(user_value.data(), user_value.size());
+        }
+      } else if (parsed_key.type == kTypeValue) {
+        s->state = kFound;
         s->value->assign(v.data(), v.size());
+      } else {
+        s->state = kDeleted;
       }
     }
   }
@@ -322,7 +339,8 @@ void Version::ForEachOverlapping(Slice user_key, Slice internal_key, void* arg,
 }
 
 Status Version::Get(const ReadOptions& options, const LookupKey& k,
-                    std::string* value, GetStats* stats) {
+                    uint64_t read_time_micros, std::string* value,
+                    GetStats* stats) {
   stats->seek_file = nullptr;
   stats->seek_file_level = -1;
 
@@ -368,7 +386,8 @@ Status Version::Get(const ReadOptions& options, const LookupKey& k,
           return false;
         case kCorrupt:
           state->s =
-              Status::Corruption("corrupted key for ", state->saver.user_key);
+               Status::Corruption("corrupted key or TTL value for ",
+                                  state->saver.user_key);
           state->found = true;
           return false;
       }
@@ -393,6 +412,7 @@ Status Version::Get(const ReadOptions& options, const LookupKey& k,
   state.saver.ucmp = vset_->icmp_.user_comparator();
   state.saver.user_key = k.user_key();
   state.saver.value = value;
+  state.saver.read_time_micros = read_time_micros;
 
   ForEachOverlapping(state.saver.user_key, state.ikey, &state, &State::Match);
 
@@ -858,6 +878,17 @@ Status VersionSet::LogAndApply(VersionEdit* edit, port::Mutex* mu) {
   return s;
 }
 
+Status VersionSet::RewriteManifest(port::Mutex* mu) {
+  mu->AssertHeld();
+  delete descriptor_log_;
+  descriptor_log_ = nullptr;
+  delete descriptor_file_;
+  descriptor_file_ = nullptr;
+  manifest_file_number_ = NewFileNumber();
+  VersionEdit edit;
+  return LogAndApply(&edit, mu);
+}
+
 Status VersionSet::Recover(bool* save_manifest) {
   struct LogReporter : public log::Reader::Reporter {
     Status* status;
@@ -1087,7 +1118,8 @@ Status VersionSet::WriteSnapshot(log::Writer* log) {
     const std::vector<FileMetaData*>& files = current_->files_[level];
     for (size_t i = 0; i < files.size(); i++) {
       const FileMetaData* f = files[i];
-      edit.AddFile(level, f->number, f->file_size, f->smallest, f->largest);
+      edit.AddFile(level, f->number, f->file_size, f->smallest, f->largest,
+                   f->metadata, f->metadata_known, f->key_references, f->has_ttl);
     }
   }
 
@@ -1457,7 +1489,7 @@ Compaction* VersionSet::CompactRange(int level, const InternalKey* begin,
   // But we cannot do this for level-0 since level-0 files can overlap
   // and we must not pick one file and drop another older file if the
   // two files overlap.
-  if (level > 0) {
+  if (level > 0 && level + 1 < config::kNumLevels) {
     const uint64_t limit = MaxFileSizeForLevel(options_, level);
     uint64_t total = 0;
     for (size_t i = 0; i < inputs.size(); i++) {
@@ -1474,7 +1506,13 @@ Compaction* VersionSet::CompactRange(int level, const InternalKey* begin,
   c->input_version_ = current_;
   c->input_version_->Ref();
   c->inputs_[0] = inputs;
-  SetupOtherInputs(c);
+  if (level + 1 < config::kNumLevels) {
+    SetupOtherInputs(c);
+  } else {
+    // The last level has nowhere deeper to move. Rewrite its selected files
+    // in place, including same-user-key boundary files, for physical GC.
+    AddBoundaryInputs(icmp_, current_->files_[level], &c->inputs_[0]);
+  }
   return c;
 }
 
