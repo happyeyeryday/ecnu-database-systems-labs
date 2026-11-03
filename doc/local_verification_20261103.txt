@@ -1,0 +1,50 @@
+本地核验记录（2026-11-03）
+
+执行者：Codex。
+核验对象：小组实现，原提交135200d（上传实验报告）所含源码。
+本次同步仅补充说明与核验记录，不修改数据库实现或课程评测代码。
+
+环境与方法
+WSL2 / Linux 6.6.87.2 / glibc 2.35，GCC 11.4，Python 3.13.11。
+本轮环境缺少CMake与CTest，使用GCC/G++按CMakeLists.txt的源文件清单直接编译，
+共100个翻译单元，C++17、-O3、-DNDEBUG、-pthread，链接仓库自带GoogleTest。
+可选Snappy、Zstd、CRC32C库关闭，相关两个压缩测试跳过。
+课程固定版本原生回归文件按benchmark/package.json的SHA-256逐一核对通过。
+
+执行原有课程测试与内部测试：
+metadata_test：3项通过，0失败。
+ttl_test：2项通过，0失败。
+leveldb_tests：275项运行，273项通过，2项压缩测试跳过，0失败。
+c_test：独立C API测试程序退出码0，通过。
+env_posix_test：7项通过，0失败。
+
+执行课程固定版本原生回归：
+homework_regression：211项运行，209项通过，2项压缩测试跳过，0失败。
+homework_c_regression：独立C API测试程序退出码0，通过。
+homework_env_regression：7项通过，0失败。
+
+执行公开combined quick完整场景：22/22通过。
+参数与课程quick配置一致：N=10000，线程参数4，rounds=4，repeat=1，
+value=256字节，seed=7774596，过期比例参数50%。
+直接运行从当前源码编译的homework_bench，并按课程runner的结果协议检查返回状态。
+场景覆盖TTL、metadata、混合覆盖/恢复/GC/并发/读取视图和公开性能工作负载。
+
+核验范围
+本轮通过从源码重新编译的程序验证功能；标准CMake/CTest入口没有实际执行。
+本轮没有重新运行standard三轮矩阵，也没有进行原生性能baseline对照。
+本轮quick性能数值没有替换进原实验报告。
+原报告引用的standard结果另已检查summary.json、aggregate.json与provenance.json：
+22种场景共168次运行通过，主要统计查询与配对吞吐下降率与报告/PPT相符。
+原评测源码快照中143个项目C/C++文件与本轮核验前的当前源码逐一比较无差异。
+
+本地运行条件
+原压缩包中的二进制依赖更高版本系统库，应从源码使用新的构建目录编译。
+首轮把测试数据库放在/mnt/d挂载目录，TTL测试的写入阶段超过20秒有效期，
+导致读取前部分记录已过期。同一二进制改用/tmp后，TTL两项均通过。
+随后全部测试和22个公开场景均使用Linux临时目录执行，无失败。
+因此README建议将构建目录、测试数据库和benchmark输出放在Linux文件系统。
+
+原测试机器的历史环境
+Intel Xeon Gold 6326 @2.90GHz，64个逻辑CPU，记录可见内存约503.5GiB，
+Linux 6.8.0-78-generic / glibc 2.39，GCC 13.3.0，CMake 3.28.3。
+这组配置来自历史provenance.json，不是本轮WSL2机器配置。
