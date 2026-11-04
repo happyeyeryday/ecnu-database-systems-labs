@@ -24,6 +24,8 @@
 - 原机器standard证据：[汇总](evaluation/original-standard-20261029/summary.json)、[指标](evaluation/original-standard-20261029/aggregate.json)、[环境](evaluation/original-standard-20261029/provenance.json)。
 - 本地quick核验：[汇总](evaluation/local-quick-20261103/summary.json)。
 
+旧讲解文档中的 `leveldb/` 指本分支根目录；历史 `build/evaluation-combined-standard-20261029-195401/` 记录对应本分支 `evaluation/original-standard-20261029/`，本地 `reproduction_20261103/` 记录对应 `evaluation/local-quick-20261103/`。其中日志内保留的原机器绝对路径用于说明来源。
+
 ## 实现内容
 
 - TTL：支持 `Put(options, key, value, ttl)`，保存绝对到期时间；Get、Snapshot、Iterator 使用一致的有效期语义；WAL/SST 恢复保留原到期时间，Compaction 安全回收过期记录。
