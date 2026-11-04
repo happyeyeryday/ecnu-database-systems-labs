@@ -1,0 +1,15 @@
+COMMAND ["/tmp/leveldb-repro-7px_6ah_/metadata_test", "--gtest_output=xml:/mnt/d/zzr/\u5927\u56db\u8bfe\u7a0b/\u6570\u636e\u5e93plus/project1/reproduction_20261103/metadata_test.xml"]
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from StatsDBTest
+[ RUN      ] StatsDBTest.BasicCount
+[       OK ] StatsDBTest.BasicCount (37 ms)
+[ RUN      ] StatsDBTest.PersistAndRecover
+[       OK ] StatsDBTest.PersistAndRecover (57 ms)
+[ RUN      ] StatsDBTest.CompactionUpdate
+[       OK ] StatsDBTest.CompactionUpdate (66 ms)
+[----------] 3 tests from StatsDBTest (163 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (165 ms total)
+[  PASSED  ] 3 tests.

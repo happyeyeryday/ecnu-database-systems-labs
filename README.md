@@ -1,6 +1,8 @@
-# LevelDB Project1：TTL 与统计元数据
+# Project1：LevelDB TTL 与统计元数据
 
-本仓库用于朱昭荣（10234304416）的课程作业提交，保存两人小组共同使用的一份 LevelDB 实现及实验报告，并保留原有 Git 提交历史。
+本分支整理华东师大数据库课程Project1，保存两人小组共同使用的LevelDB实现、实验报告、汇报原稿和核验材料。代码基于Google开源LevelDB，并保留原有许可证及提交历史。
+
+正式课程提交保留在码园；本GitHub分支用于项目展示、资料分享和后续修订。
 
 个人仓库的初始化说明保存在 [原始说明](doc/original_student_repository_README.txt)。本次合并保留个人仓库与小组实现的两条提交历史。
 
@@ -14,6 +16,13 @@
 | 徐卓一 | 10235102432 | TTL 功能及测试汇报 |
 
 实验报告：[实验报告.pdf](实验报告.pdf)。
+
+- 汇报原稿：[PPTX](presentation/original.pptx)、[PDF](presentation/original.pdf)。当前为32页初稿。
+- 作业要求：[PDF](requirements/project1.pdf)。
+- 后续修订：[按T0/T1/T2分级的PPT评审与修改建议](doc/presentation_review.txt)。
+- 学习资料：[代码阅读路线](doc/code_reading_guide.txt)。
+- 原机器standard证据：[汇总](evaluation/original-standard-20261029/summary.json)、[指标](evaluation/original-standard-20261029/aggregate.json)、[环境](evaluation/original-standard-20261029/provenance.json)。
+- 本地quick核验：[汇总](evaluation/local-quick-20261103/summary.json)。
 
 ## 实现内容
 

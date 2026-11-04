@@ -1,0 +1,5483 @@
+{
+  "schema_version": 1,
+  "kind": "combined",
+  "profile": "standard",
+  "config": {
+    "keys": 100000,
+    "threads": 8,
+    "rounds": 8,
+    "repeat": 3
+  },
+  "value_bytes": 256,
+  "seed": 7774596,
+  "source": "/home/joeyxzy/db_class/leveldb_project1",
+  "records": [
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 6.031610004603863,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/combined_concurrent-n100000-t8-e50-r1/run.log",
+      "case": "combined_concurrent",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 160524,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 6.2274084985256195,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/combined_concurrent-n100000-t8-e50-r2/run.log",
+      "case": "combined_concurrent",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 161804,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 6.578911572694778,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/combined_concurrent-n100000-t8-e50-r3/run.log",
+      "case": "combined_concurrent",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 161516,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.008600033819675446,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/combined_contract-n100000-t8-e50-r1/run.log",
+      "case": "combined_contract",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.008342854678630829,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/combined_contract-n100000-t8-e50-r2/run.log",
+      "case": "combined_contract",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.004649277776479721,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/combined_contract-n100000-t8-e50-r3/run.log",
+      "case": "combined_contract",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.032030023634433746,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/combined_gc-n100000-t8-e50-r1/run.log",
+      "case": "combined_gc",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.032166652381420135,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/combined_gc-n100000-t8-e50-r2/run.log",
+      "case": "combined_gc",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.032696619629859924,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/combined_gc-n100000-t8-e50-r3/run.log",
+      "case": "combined_gc",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.016549617052078247,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/combined_overwrites-n100000-t8-e50-r1/run.log",
+      "case": "combined_overwrites",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.016264382749795914,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/combined_overwrites-n100000-t8-e50-r2/run.log",
+      "case": "combined_overwrites",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.016448263078927994,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/combined_overwrites-n100000-t8-e50-r3/run.log",
+      "case": "combined_overwrites",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.03255290910601616,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/combined_reopen-n100000-t8-e50-r1/run.log",
+      "case": "combined_reopen",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.03258960694074631,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/combined_reopen-n100000-t8-e50-r2/run.log",
+      "case": "combined_reopen",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.032605960965156555,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/combined_reopen-n100000-t8-e50-r3/run.log",
+      "case": "combined_reopen",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.0166165791451931,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/combined_views-n100000-t8-e50-r1/run.log",
+      "case": "combined_views",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.016525287181138992,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/combined_views-n100000-t8-e50-r2/run.log",
+      "case": "combined_views",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.016372043639421463,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/combined_views-n100000-t8-e50-r3/run.log",
+      "case": "combined_views",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.008471235632896423,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/metadata_contract-n100000-t8-e50-r1/run.log",
+      "case": "metadata_contract",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.004194151610136032,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/metadata_contract-n100000-t8-e50-r2/run.log",
+      "case": "metadata_contract",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.008422710001468658,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/metadata_contract-n100000-t8-e50-r3/run.log",
+      "case": "metadata_contract",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.966179758310318,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/metadata_reopen-n100000-t8-e50-r1/run.log",
+      "case": "metadata_reopen",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 66624,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.9163731262087822,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/metadata_reopen-n100000-t8-e50-r2/run.log",
+      "case": "metadata_reopen",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 67304,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.9663084410130978,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/metadata_reopen-n100000-t8-e50-r3/run.log",
+      "case": "metadata_reopen",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 67632,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.16528847813606262,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_gc-n10000-t1-e0-r1/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 0,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 10000,
+          "seconds": 0.0128491,
+          "ops_per_second": 778263,
+          "p50_us": 12848,
+          "p95_us": 12848,
+          "p99_us": 12848,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 2993858,
+          "db_directory_bytes_after_drain": 3910718
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.1648217998445034,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_gc-n10000-t1-e0-r2/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 0,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 10000,
+          "seconds": 0.0135718,
+          "ops_per_second": 736824,
+          "p50_us": 13570.3,
+          "p95_us": 13570.3,
+          "p99_us": 13570.3,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 2993858,
+          "db_directory_bytes_after_drain": 3910718
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.1650674045085907,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_gc-n10000-t1-e0-r3/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 0,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 10000,
+          "seconds": 0.0136918,
+          "ops_per_second": 730362,
+          "p50_us": 13690.1,
+          "p95_us": 13690.1,
+          "p99_us": 13690.1,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 2993858,
+          "db_directory_bytes_after_drain": 3910718
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.16484399139881134,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_gc-n10000-t1-e50-r1/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 10000,
+          "seconds": 0.011857,
+          "ops_per_second": 843385,
+          "p50_us": 11855.9,
+          "p95_us": 11855.9,
+          "p99_us": 11855.9,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 1497045,
+          "db_directory_bytes_after_drain": 2413872
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.16499605774879456,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_gc-n10000-t1-e50-r2/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 10000,
+          "seconds": 0.0115964,
+          "ops_per_second": 862336,
+          "p50_us": 11594.6,
+          "p95_us": 11594.6,
+          "p99_us": 11594.6,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 1497045,
+          "db_directory_bytes_after_drain": 2413795
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.164944589138031,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_gc-n10000-t1-e50-r3/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 10000,
+          "seconds": 0.0107188,
+          "ops_per_second": 932936,
+          "p50_us": 10717.8,
+          "p95_us": 10717.8,
+          "p99_us": 10717.8,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 1497045,
+          "db_directory_bytes_after_drain": 2413795
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.16470930725336075,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_gc-n10000-t1-e100-r1/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 100,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 10000,
+          "seconds": 0.00869263,
+          "ops_per_second": 1150400.0,
+          "p50_us": 8691.58,
+          "p95_us": 8691.58,
+          "p99_us": 8691.58,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 57,
+          "db_directory_bytes_after_drain": 916504
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.16494379192590714,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_gc-n10000-t1-e100-r2/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 100,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 10000,
+          "seconds": 0.00947304,
+          "ops_per_second": 1055630.0,
+          "p50_us": 9471.76,
+          "p95_us": 9471.76,
+          "p99_us": 9471.76,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 57,
+          "db_directory_bytes_after_drain": 916658
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.1647941768169403,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_gc-n10000-t1-e100-r3/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 100,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 10000,
+          "seconds": 0.00913158,
+          "ops_per_second": 1095100.0,
+          "p50_us": 9130.01,
+          "p95_us": 9130.01,
+          "p99_us": 9130.01,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 57,
+          "db_directory_bytes_after_drain": 916581
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4173618890345097,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_gc-n100000-t1-e0-r1/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 0,
+      "peak_rss_kib": 66656,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 100000,
+          "seconds": 0.117202,
+          "ops_per_second": 853230,
+          "p50_us": 117200,
+          "p95_us": 117200,
+          "p99_us": 117200,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 29937742,
+          "db_directory_bytes_after_drain": 39076033
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.571919035166502,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_gc-n100000-t1-e0-r2/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 0,
+      "peak_rss_kib": 67664,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 100000,
+          "seconds": 0.144756,
+          "ops_per_second": 690820,
+          "p50_us": 144753,
+          "p95_us": 144753,
+          "p99_us": 144753,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 29937742,
+          "db_directory_bytes_after_drain": 39075956
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.318552765995264,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_gc-n100000-t1-e0-r3/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 0,
+      "peak_rss_kib": 68924,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 100000,
+          "seconds": 0.114143,
+          "ops_per_second": 876097,
+          "p50_us": 114141,
+          "p95_us": 114141,
+          "p99_us": 114141,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 29937742,
+          "db_directory_bytes_after_drain": 39076033
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.367690272629261,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_gc-n100000-t1-e50-r1/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 57144,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 100000,
+          "seconds": 0.109868,
+          "ops_per_second": 910180,
+          "p50_us": 109867,
+          "p95_us": 109867,
+          "p99_us": 109867,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 14969083,
+          "db_directory_bytes_after_drain": 24105919
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3676015734672546,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_gc-n100000-t1-e50-r2/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 57032,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 100000,
+          "seconds": 0.101754,
+          "ops_per_second": 982761,
+          "p50_us": 101753,
+          "p95_us": 101753,
+          "p99_us": 101753,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 14969083,
+          "db_directory_bytes_after_drain": 24105842
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3679810091853142,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_gc-n100000-t1-e50-r3/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 56536,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 100000,
+          "seconds": 0.106631,
+          "ops_per_second": 937813,
+          "p50_us": 106629,
+          "p95_us": 106629,
+          "p99_us": 106629,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 14969083,
+          "db_directory_bytes_after_drain": 24105919
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.2178443595767021,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_gc-n100000-t1-e100-r1/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 100,
+      "peak_rss_kib": 58376,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 100000,
+          "seconds": 0.0872737,
+          "ops_per_second": 1145820.0,
+          "p50_us": 87271.4,
+          "p95_us": 87271.4,
+          "p99_us": 87271.4,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 241,
+          "db_directory_bytes_after_drain": 9135503
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.2170670069754124,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_gc-n100000-t1-e100-r2/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 100,
+      "peak_rss_kib": 58876,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 100000,
+          "seconds": 0.0888693,
+          "ops_per_second": 1125250.0,
+          "p50_us": 88867.3,
+          "p95_us": 88867.3,
+          "p99_us": 88867.3,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 241,
+          "db_directory_bytes_after_drain": 9135503
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.166358843445778,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_gc-n100000-t1-e100-r3/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 100,
+      "peak_rss_kib": 59060,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 100000,
+          "seconds": 0.0901912,
+          "ops_per_second": 1108760.0,
+          "p50_us": 90188.7,
+          "p95_us": 90188.7,
+          "p99_us": 90188.7,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 241,
+          "db_directory_bytes_after_drain": 9135426
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.7160848490893841,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n10000-t1-e0-r1/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 0,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0534757,
+          "ops_per_second": 187001,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997353
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0714265,
+          "ops_per_second": 140004,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997584
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 125162,
+          "seconds": 0.0713694,
+          "ops_per_second": 1753720.0,
+          "p50_us": 0.083,
+          "p95_us": 1.183,
+          "p99_us": 8.831,
+          "latency_samples": 1956,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997584
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.5656455382704735,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n10000-t1-e0-r2/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 0,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0619372,
+          "ops_per_second": 161454,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997430
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 206626,
+          "seconds": 0.0618824,
+          "ops_per_second": 3339010.0,
+          "p50_us": 0.045,
+          "p95_us": 0.08,
+          "p99_us": 6.329,
+          "latency_samples": 3229,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997430
+        },
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0456257,
+          "ops_per_second": 219175,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5927099,
+          "db_directory_bytes_after_drain": 5997276
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.6160122156143188,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n10000-t1-e0-r3/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 0,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0580235,
+          "ops_per_second": 172344,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997353
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0696284,
+          "ops_per_second": 143620,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997353
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 122438,
+          "seconds": 0.0695674,
+          "ops_per_second": 1759990.0,
+          "p50_us": 0.059,
+          "p95_us": 5.945,
+          "p99_us": 9.078,
+          "latency_samples": 1914,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997353
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.41470060870051384,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n10000-t1-e50-r1/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.053134,
+          "ops_per_second": 188203,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997431
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0625232,
+          "ops_per_second": 159941,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997354
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 135817,
+          "seconds": 0.0624744,
+          "ops_per_second": 2173960.0,
+          "p50_us": 0.046,
+          "p95_us": 0.878,
+          "p99_us": 8.001,
+          "latency_samples": 2123,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997354
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.4146006554365158,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n10000-t1-e50-r2/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.05851,
+          "ops_per_second": 170911,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997354
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 219740,
+          "seconds": 0.0584539,
+          "ops_per_second": 3759200.0,
+          "p50_us": 0.049,
+          "p95_us": 0.075,
+          "p99_us": 6.731,
+          "latency_samples": 3434,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997354
+        },
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0408127,
+          "ops_per_second": 245022,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997354
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.5654452480375767,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n10000-t1-e50-r3/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0572242,
+          "ops_per_second": 174751,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997354
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0705888,
+          "ops_per_second": 141666,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997354
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 205247,
+          "seconds": 0.0705283,
+          "ops_per_second": 2910140.0,
+          "p50_us": 0.045,
+          "p95_us": 0.219,
+          "p99_us": 8.87,
+          "latency_samples": 3207,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997354
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.26512470468878746,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n10000-t1-e100-r1/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 100,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0429744,
+          "ops_per_second": 232697,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5927099,
+          "db_directory_bytes_after_drain": 5997355
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0550665,
+          "ops_per_second": 181599,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997355
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 116645,
+          "seconds": 0.0550026,
+          "ops_per_second": 2120720.0,
+          "p50_us": 0.054,
+          "p95_us": 1.21,
+          "p99_us": 8.632,
+          "latency_samples": 1823,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997355
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.2651330456137657,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n10000-t1-e100-r2/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 100,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0586458,
+          "ops_per_second": 170515,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997355
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 228243,
+          "seconds": 0.0585913,
+          "ops_per_second": 3895510.0,
+          "p50_us": 0.046,
+          "p95_us": 0.069,
+          "p99_us": 6.665,
+          "latency_samples": 3567,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997355
+        },
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0515341,
+          "ops_per_second": 194046,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997355
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.36526400223374367,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n10000-t1-e100-r3/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 100,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0440406,
+          "ops_per_second": 227063,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997432
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0634858,
+          "ops_per_second": 157516,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997278
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 92146,
+          "seconds": 0.0634323,
+          "ops_per_second": 1452670.0,
+          "p50_us": 0.094,
+          "p95_us": 6.244,
+          "p99_us": 10.25,
+          "latency_samples": 1440,
+          "append_bytes_during_phase": 5941757,
+          "db_directory_bytes_after_drain": 5997278
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.7660654038190842,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n10000-t8-e0-r1/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 8,
+      "expired_percent": 0,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.133057,
+          "ops_per_second": 75155.6,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9203063,
+          "db_directory_bytes_after_drain": 6202075
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.134311,
+          "ops_per_second": 74453.9,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9215967,
+          "db_directory_bytes_after_drain": 6202910
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 608983,
+          "seconds": 0.134061,
+          "ops_per_second": 4542580.0,
+          "p50_us": 0.049,
+          "p95_us": 0.074,
+          "p99_us": 0.67,
+          "latency_samples": 9516,
+          "append_bytes_during_phase": 9213543,
+          "db_directory_bytes_after_drain": 6202910
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.766770713031292,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n10000-t8-e0-r2/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 8,
+      "expired_percent": 0,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.150008,
+          "ops_per_second": 66663.3,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 8070965,
+          "db_directory_bytes_after_drain": 6132753
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 772612,
+          "seconds": 0.149531,
+          "ops_per_second": 5166910.0,
+          "p50_us": 0.045,
+          "p95_us": 0.068,
+          "p99_us": 0.232,
+          "latency_samples": 12073,
+          "append_bytes_during_phase": 8058883,
+          "db_directory_bytes_after_drain": 6132753
+        },
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.12943,
+          "ops_per_second": 77262,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9205205,
+          "db_directory_bytes_after_drain": 6201483
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.7664297446608543,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n10000-t8-e0-r3/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 8,
+      "expired_percent": 0,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.145434,
+          "ops_per_second": 68759.5,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9215431,
+          "db_directory_bytes_after_drain": 6202658
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.12948,
+          "ops_per_second": 77231.9,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9201106,
+          "db_directory_bytes_after_drain": 6201562
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 531868,
+          "seconds": 0.129123,
+          "ops_per_second": 4119070.0,
+          "p50_us": 0.059,
+          "p95_us": 0.082,
+          "p99_us": 1.08,
+          "latency_samples": 8311,
+          "append_bytes_during_phase": 9200803,
+          "db_directory_bytes_after_drain": 6201562
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.6161884590983391,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n10000-t8-e50-r1/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.149297,
+          "ops_per_second": 66980.5,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9206890,
+          "db_directory_bytes_after_drain": 6202054
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.146359,
+          "ops_per_second": 68325.3,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9216828,
+          "db_directory_bytes_after_drain": 6202823
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 590023,
+          "seconds": 0.14608,
+          "ops_per_second": 4039050.0,
+          "p50_us": 0.055,
+          "p95_us": 0.088,
+          "p99_us": 1.03,
+          "latency_samples": 9220,
+          "append_bytes_during_phase": 9214726,
+          "db_directory_bytes_after_drain": 6202823
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.6668905168771744,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n10000-t8-e50-r2/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.13131,
+          "ops_per_second": 76155.8,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 8084678,
+          "db_directory_bytes_after_drain": 6133602
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 604228,
+          "seconds": 0.130692,
+          "ops_per_second": 4623310.0,
+          "p50_us": 0.044,
+          "p95_us": 0.069,
+          "p99_us": 0.29,
+          "latency_samples": 9442,
+          "append_bytes_during_phase": 8081440,
+          "db_directory_bytes_after_drain": 6133602
+        },
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.1506,
+          "ops_per_second": 66401.1,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9218036,
+          "db_directory_bytes_after_drain": 6202341
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.6158466786146164,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n10000-t8-e50-r3/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.132588,
+          "ops_per_second": 75421.5,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9208913,
+          "db_directory_bytes_after_drain": 6201550
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.165205,
+          "ops_per_second": 60531,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 8088216,
+          "db_directory_bytes_after_drain": 6133503
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 521493,
+          "seconds": 0.16496,
+          "ops_per_second": 3161340.0,
+          "p50_us": 0.06,
+          "p95_us": 0.146,
+          "p99_us": 1.155,
+          "latency_samples": 8149,
+          "append_bytes_during_phase": 8084296,
+          "db_directory_bytes_after_drain": 6133503
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.4657135605812073,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n10000-t8-e100-r1/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 8,
+      "expired_percent": 100,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.141193,
+          "ops_per_second": 70824.9,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9211294,
+          "db_directory_bytes_after_drain": 6202527
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.156914,
+          "ops_per_second": 63729.1,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9209108,
+          "db_directory_bytes_after_drain": 6201906
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 560221,
+          "seconds": 0.156539,
+          "ops_per_second": 3578790.0,
+          "p50_us": 0.06,
+          "p95_us": 0.099,
+          "p99_us": 1.212,
+          "latency_samples": 8754,
+          "append_bytes_during_phase": 9205794,
+          "db_directory_bytes_after_drain": 6201906
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.4153995029628277,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n10000-t8-e100-r2/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 8,
+      "expired_percent": 100,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.124246,
+          "ops_per_second": 80485.5,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9202518,
+          "db_directory_bytes_after_drain": 6200622
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 630282,
+          "seconds": 0.123878,
+          "ops_per_second": 5087930.0,
+          "p50_us": 0.043,
+          "p95_us": 0.068,
+          "p99_us": 0.708,
+          "latency_samples": 9849,
+          "append_bytes_during_phase": 9191970,
+          "db_directory_bytes_after_drain": 6200622
+        },
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.115455,
+          "ops_per_second": 86613.8,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 8075016,
+          "db_directory_bytes_after_drain": 6132981
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.4656502231955528,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n10000-t8-e100-r3/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 8,
+      "expired_percent": 100,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.136043,
+          "ops_per_second": 73506.2,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9212672,
+          "db_directory_bytes_after_drain": 6202209
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.147691,
+          "ops_per_second": 67709.1,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9202750,
+          "db_directory_bytes_after_drain": 6201664
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 397542,
+          "seconds": 0.14744,
+          "ops_per_second": 2696290.0,
+          "p50_us": 0.072,
+          "p95_us": 0.146,
+          "p99_us": 1.875,
+          "latency_samples": 6212,
+          "append_bytes_during_phase": 9202447,
+          "db_directory_bytes_after_drain": 6201664
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 5.174672707915306,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n100000-t1-e0-r1/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 0,
+      "peak_rss_kib": 139976,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 0.472878,
+          "ops_per_second": 211471,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960130
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 0.605142,
+          "ops_per_second": 165250,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960130
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 1198169,
+          "seconds": 0.605058,
+          "ops_per_second": 1980250.0,
+          "p50_us": 0.044,
+          "p95_us": 5.41,
+          "p99_us": 8.462,
+          "latency_samples": 18722,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960130
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 5.073072157800198,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n100000-t1-e0-r2/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 0,
+      "peak_rss_kib": 142844,
+      "metrics": [
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 0.631652,
+          "ops_per_second": 158315,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960130
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 978740,
+          "seconds": 0.631584,
+          "ops_per_second": 1549660.0,
+          "p50_us": 0.054,
+          "p95_us": 6.132,
+          "p99_us": 9.401,
+          "latency_samples": 15293,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960130
+        },
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 0.444844,
+          "ops_per_second": 224798,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960207
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 5.324105575680733,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n100000-t1-e0-r3/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 0,
+      "peak_rss_kib": 141616,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 0.498504,
+          "ops_per_second": 200600,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960130
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 0.646515,
+          "ops_per_second": 154675,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960130
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 1255244,
+          "seconds": 0.646439,
+          "ops_per_second": 1941780.0,
+          "p50_us": 0.052,
+          "p95_us": 1.342,
+          "p99_us": 9.199,
+          "latency_samples": 19614,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960130
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 3.87161548063159,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n100000-t1-e50-r1/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 82576,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 0.488053,
+          "ops_per_second": 204896,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960439
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 0.581377,
+          "ops_per_second": 172006,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960208
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 942875,
+          "seconds": 0.581307,
+          "ops_per_second": 1621990.0,
+          "p50_us": 0.045,
+          "p95_us": 5.827,
+          "p99_us": 8.516,
+          "latency_samples": 14733,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960208
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 3.82143347710371,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n100000-t1-e50-r2/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 82156,
+      "metrics": [
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 0.643625,
+          "ops_per_second": 155370,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960208
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 1704006,
+          "seconds": 0.64354,
+          "ops_per_second": 2647860.0,
+          "p50_us": 0.044,
+          "p95_us": 0.204,
+          "p99_us": 8.233,
+          "latency_samples": 26626,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960208
+        },
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 0.4298,
+          "ops_per_second": 232666,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960208
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 3.9715832732617855,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n100000-t1-e50-r3/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 82092,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 0.488161,
+          "ops_per_second": 204851,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960208
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 0.60667,
+          "ops_per_second": 164834,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960054
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 1040943,
+          "seconds": 0.606546,
+          "ops_per_second": 1716180.0,
+          "p50_us": 0.053,
+          "p95_us": 5.565,
+          "p99_us": 9.347,
+          "latency_samples": 16265,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960054
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 2.3686032593250275,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n100000-t1-e100-r1/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 100,
+      "peak_rss_kib": 52652,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 0.477041,
+          "ops_per_second": 209626,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960131
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 0.598115,
+          "ops_per_second": 167192,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960132
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 1081950,
+          "seconds": 0.598067,
+          "ops_per_second": 1809080.0,
+          "p50_us": 0.046,
+          "p95_us": 5.511,
+          "p99_us": 9.108,
+          "latency_samples": 16906,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960132
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 2.318977914750576,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n100000-t1-e100-r2/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 100,
+      "peak_rss_kib": 52360,
+      "metrics": [
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 0.604284,
+          "ops_per_second": 165485,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960209
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 1069029,
+          "seconds": 0.604226,
+          "ops_per_second": 1769250.0,
+          "p50_us": 0.054,
+          "p95_us": 5.517,
+          "p99_us": 9.295,
+          "latency_samples": 16704,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960209
+        },
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 0.446726,
+          "ops_per_second": 223851,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960132
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 2.3214861936867237,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n100000-t1-e100-r3/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 100,
+      "peak_rss_kib": 51028,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 0.408035,
+          "ops_per_second": 245077,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960209
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 0.553111,
+          "ops_per_second": 180795,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960209
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 1039114,
+          "seconds": 0.553063,
+          "ops_per_second": 1878830.0,
+          "p50_us": 0.046,
+          "p95_us": 0.904,
+          "p99_us": 9.045,
+          "latency_samples": 16237,
+          "append_bytes_during_phase": 60145862,
+          "db_directory_bytes_after_drain": 59960209
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 7.429563160985708,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n100000-t8-e0-r1/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 0,
+      "peak_rss_kib": 132068,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 1.61869,
+          "ops_per_second": 61778.4,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 136585798,
+          "db_directory_bytes_after_drain": 64674644
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 1.61977,
+          "ops_per_second": 61737.2,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 136683840,
+          "db_directory_bytes_after_drain": 64680074
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 3897214,
+          "seconds": 1.61954,
+          "ops_per_second": 2406370.0,
+          "p50_us": 0.089,
+          "p95_us": 0.184,
+          "p99_us": 1.77,
+          "latency_samples": 60894,
+          "append_bytes_during_phase": 136683537,
+          "db_directory_bytes_after_drain": 64680074
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 7.428385276347399,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n100000-t8-e0-r2/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 0,
+      "peak_rss_kib": 137512,
+      "metrics": [
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 1.63288,
+          "ops_per_second": 61241.5,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 138038333,
+          "db_directory_bytes_after_drain": 64758406
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 3595210,
+          "seconds": 1.63242,
+          "ops_per_second": 2202380.0,
+          "p50_us": 0.096,
+          "p95_us": 0.198,
+          "p99_us": 2.134,
+          "latency_samples": 56176,
+          "append_bytes_during_phase": 138052698,
+          "db_directory_bytes_after_drain": 64758406
+        },
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 1.59499,
+          "ops_per_second": 62696.4,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 142179803,
+          "db_directory_bytes_after_drain": 65019978
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 7.229398664087057,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n100000-t8-e0-r3/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 0,
+      "peak_rss_kib": 135308,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 1.54947,
+          "ops_per_second": 64538.3,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 162337667,
+          "db_directory_bytes_after_drain": 66311706
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 1.63503,
+          "ops_per_second": 61161,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 128658202,
+          "db_directory_bytes_after_drain": 64204872
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 4073652,
+          "seconds": 1.63462,
+          "ops_per_second": 2492110.0,
+          "p50_us": 0.099,
+          "p95_us": 0.192,
+          "p99_us": 1.477,
+          "latency_samples": 63651,
+          "append_bytes_during_phase": 128858335,
+          "db_directory_bytes_after_drain": 64204872
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 5.933934945613146,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n100000-t8-e50-r1/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 76368,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 1.40074,
+          "ops_per_second": 71390.7,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 150732262,
+          "db_directory_bytes_after_drain": 65622076
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 1.63573,
+          "ops_per_second": 61134.7,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 151920724,
+          "db_directory_bytes_after_drain": 65695617
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 3411427,
+          "seconds": 1.63539,
+          "ops_per_second": 2086010.0,
+          "p50_us": 0.096,
+          "p95_us": 0.266,
+          "p99_us": 2.474,
+          "latency_samples": 53304,
+          "append_bytes_during_phase": 153525628,
+          "db_directory_bytes_after_drain": 65695617
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 5.976765859872103,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n100000-t8-e50-r2/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 77576,
+      "metrics": [
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 1.62358,
+          "ops_per_second": 61592.4,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 147089215,
+          "db_directory_bytes_after_drain": 65345309
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 3708383,
+          "seconds": 1.623,
+          "ops_per_second": 2284890.0,
+          "p50_us": 0.095,
+          "p95_us": 0.195,
+          "p99_us": 2.095,
+          "latency_samples": 57944,
+          "append_bytes_during_phase": 147750179,
+          "db_directory_bytes_after_drain": 65345309
+        },
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 1.57469,
+          "ops_per_second": 63504.6,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 154414500,
+          "db_directory_bytes_after_drain": 65834823
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 5.879348013550043,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n100000-t8-e50-r3/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 74796,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 1.42864,
+          "ops_per_second": 69996.8,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 143057285,
+          "db_directory_bytes_after_drain": 65227127
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 1.61122,
+          "ops_per_second": 62064.8,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 139810480,
+          "db_directory_bytes_after_drain": 64869014
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 3724891,
+          "seconds": 1.61099,
+          "ops_per_second": 2312180.0,
+          "p50_us": 0.083,
+          "p95_us": 0.235,
+          "p99_us": 2.189,
+          "latency_samples": 58202,
+          "append_bytes_during_phase": 139810177,
+          "db_directory_bytes_after_drain": 64869014
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 4.474451497197151,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n100000-t8-e100-r1/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 100,
+      "peak_rss_kib": 42752,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 1.5708,
+          "ops_per_second": 63661.8,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 138581508,
+          "db_directory_bytes_after_drain": 64809218
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 1.56084,
+          "ops_per_second": 64067.9,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 151479424,
+          "db_directory_bytes_after_drain": 65564823
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 4062449,
+          "seconds": 1.56022,
+          "ops_per_second": 2603760.0,
+          "p50_us": 0.072,
+          "p95_us": 0.208,
+          "p99_us": 1.663,
+          "latency_samples": 63476,
+          "append_bytes_during_phase": 151479424,
+          "db_directory_bytes_after_drain": 65564823
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 4.625046905130148,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n100000-t8-e100-r2/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 100,
+      "peak_rss_kib": 42124,
+      "metrics": [
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 1.58902,
+          "ops_per_second": 62931.8,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 136765711,
+          "db_directory_bytes_after_drain": 64681049
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 3270828,
+          "seconds": 1.58846,
+          "ops_per_second": 2059120.0,
+          "p50_us": 0.104,
+          "p95_us": 0.264,
+          "p99_us": 2.209,
+          "latency_samples": 51107,
+          "append_bytes_during_phase": 136761280,
+          "db_directory_bytes_after_drain": 64681049
+        },
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 1.59173,
+          "ops_per_second": 62824.7,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 144131325,
+          "db_directory_bytes_after_drain": 65166051
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 4.625520803034306,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_combined_stats_under_write-n100000-t8-e100-r3/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 100,
+      "peak_rss_kib": 46000,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 1.59136,
+          "ops_per_second": 62839.3,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 141856137,
+          "db_directory_bytes_after_drain": 65022620
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 1.55624,
+          "ops_per_second": 64257.4,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 146721343,
+          "db_directory_bytes_after_drain": 65288276
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 4510984,
+          "seconds": 1.55601,
+          "ops_per_second": 2899070.0,
+          "p50_us": 0.075,
+          "p95_us": 0.186,
+          "p99_us": 1.271,
+          "latency_samples": 70485,
+          "append_bytes_during_phase": 146780498,
+          "db_directory_bytes_after_drain": 65288276
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.11487967148423195,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_concurrent-n10000-t1-e50-r1/run.log",
+      "case": "perf_concurrent",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "parallel_put",
+          "ops": 10000,
+          "seconds": 0.0411043,
+          "ops_per_second": 243283,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5802256,
+          "db_directory_bytes_after_drain": 2916953
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.1145547479391098,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_concurrent-n10000-t1-e50-r2/run.log",
+      "case": "perf_concurrent",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "parallel_put",
+          "ops": 10000,
+          "seconds": 0.0470135,
+          "ops_per_second": 212705,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5802256,
+          "db_directory_bytes_after_drain": 2916876
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.1147833988070488,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_concurrent-n10000-t1-e50-r3/run.log",
+      "case": "perf_concurrent",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "parallel_put",
+          "ops": 10000,
+          "seconds": 0.0514001,
+          "ops_per_second": 194552,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5802256,
+          "db_directory_bytes_after_drain": 2916876
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.11438256502151489,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_concurrent-n10000-t8-e50-r1/run.log",
+      "case": "perf_concurrent",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "parallel_put",
+          "ops": 10000,
+          "seconds": 0.0729925,
+          "ops_per_second": 137000,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 7902070,
+          "db_directory_bytes_after_drain": 3054671
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.16460056602954865,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_concurrent-n10000-t8-e50-r2/run.log",
+      "case": "perf_concurrent",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "parallel_put",
+          "ops": 10000,
+          "seconds": 0.0846057,
+          "ops_per_second": 118195,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9030158,
+          "db_directory_bytes_after_drain": 3124172
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.16463574394583702,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_concurrent-n10000-t8-e50-r3/run.log",
+      "case": "perf_concurrent",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "parallel_put",
+          "ops": 10000,
+          "seconds": 0.0993989,
+          "ops_per_second": 100605,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9027055,
+          "db_directory_bytes_after_drain": 3125103
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.615654494613409,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_concurrent-n100000-t1-e50-r1/run.log",
+      "case": "perf_concurrent",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 47616,
+      "metrics": [
+        {
+          "phase": "parallel_put",
+          "ops": 100000,
+          "seconds": 0.454173,
+          "ops_per_second": 220180,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 58410224,
+          "db_directory_bytes_after_drain": 29162739
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.5656517222523689,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_concurrent-n100000-t1-e50-r2/run.log",
+      "case": "perf_concurrent",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 46592,
+      "metrics": [
+        {
+          "phase": "parallel_put",
+          "ops": 100000,
+          "seconds": 0.429119,
+          "ops_per_second": 233036,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 58410224,
+          "db_directory_bytes_after_drain": 29162739
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.565399844199419,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_concurrent-n100000-t1-e50-r3/run.log",
+      "case": "perf_concurrent",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 47104,
+      "metrics": [
+        {
+          "phase": "parallel_put",
+          "ops": 100000,
+          "seconds": 0.384858,
+          "ops_per_second": 259836,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 58410224,
+          "db_directory_bytes_after_drain": 29162816
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4681333526968956,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_concurrent-n100000-t8-e50-r1/run.log",
+      "case": "perf_concurrent",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 44880,
+      "metrics": [
+        {
+          "phase": "parallel_put",
+          "ops": 100000,
+          "seconds": 1.25917,
+          "ops_per_second": 79417.6,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 121165067,
+          "db_directory_bytes_after_drain": 34061761
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.5684055387973785,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_concurrent-n100000-t8-e50-r2/run.log",
+      "case": "perf_concurrent",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 43808,
+      "metrics": [
+        {
+          "phase": "parallel_put",
+          "ops": 100000,
+          "seconds": 1.36163,
+          "ops_per_second": 73441.6,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 116812817,
+          "db_directory_bytes_after_drain": 33795203
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.618438895791769,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_concurrent-n100000-t8-e50-r3/run.log",
+      "case": "perf_concurrent",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 44884,
+      "metrics": [
+        {
+          "phase": "parallel_put",
+          "ops": 100000,
+          "seconds": 1.44724,
+          "ops_per_second": 69097,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 132534146,
+          "db_directory_bytes_after_drain": 34772567
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.0642826147377491,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_read-n10000-t1-e50-r1/run.log",
+      "case": "perf_read",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "get_hit",
+          "ops": 10000,
+          "seconds": 0.0114318,
+          "ops_per_second": 874756,
+          "p50_us": 1.01,
+          "p95_us": 1.54,
+          "p99_us": 2.061,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2916670
+        },
+        {
+          "phase": "get_miss",
+          "ops": 10000,
+          "seconds": 0.00259179,
+          "ops_per_second": 3858340.0,
+          "p50_us": 0.245,
+          "p95_us": 0.265,
+          "p99_us": 0.274,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2916670
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.1146155595779419,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_read-n10000-t1-e50-r2/run.log",
+      "case": "perf_read",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "get_hit",
+          "ops": 10000,
+          "seconds": 0.0174295,
+          "ops_per_second": 573741,
+          "p50_us": 1.692,
+          "p95_us": 2.226,
+          "p99_us": 2.357,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2916670
+        },
+        {
+          "phase": "get_miss",
+          "ops": 10000,
+          "seconds": 0.00554546,
+          "ops_per_second": 1803280.0,
+          "p50_us": 0.545,
+          "p95_us": 0.678,
+          "p99_us": 0.95,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2916670
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.11462720111012459,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_read-n10000-t1-e50-r3/run.log",
+      "case": "perf_read",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "get_hit",
+          "ops": 10000,
+          "seconds": 0.0138694,
+          "ops_per_second": 721011,
+          "p50_us": 1.062,
+          "p95_us": 2.134,
+          "p99_us": 2.641,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2916670
+        },
+        {
+          "phase": "get_miss",
+          "ops": 10000,
+          "seconds": 0.00262199,
+          "ops_per_second": 3813900.0,
+          "p50_us": 0.25,
+          "p95_us": 0.277,
+          "p99_us": 0.295,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2916670
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.6659150160849094,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_read-n100000-t1-e50-r1/run.log",
+      "case": "perf_read",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 47616,
+      "metrics": [
+        {
+          "phase": "get_hit",
+          "ops": 100000,
+          "seconds": 0.154845,
+          "ops_per_second": 645807,
+          "p50_us": 1.354,
+          "p95_us": 2.181,
+          "p99_us": 2.704,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29160177
+        },
+        {
+          "phase": "get_miss",
+          "ops": 100000,
+          "seconds": 0.0288829,
+          "ops_per_second": 3462260.0,
+          "p50_us": 0.274,
+          "p95_us": 0.307,
+          "p99_us": 0.325,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29160177
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.6157344914972782,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_read-n100000-t1-e50-r2/run.log",
+      "case": "perf_read",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 49152,
+      "metrics": [
+        {
+          "phase": "get_hit",
+          "ops": 100000,
+          "seconds": 0.153224,
+          "ops_per_second": 652639,
+          "p50_us": 1.358,
+          "p95_us": 1.976,
+          "p99_us": 2.425,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29160177
+        },
+        {
+          "phase": "get_miss",
+          "ops": 100000,
+          "seconds": 0.0283907,
+          "ops_per_second": 3522280.0,
+          "p50_us": 0.268,
+          "p95_us": 0.293,
+          "p99_us": 0.332,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29160177
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.6160039156675339,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_read-n100000-t1-e50-r3/run.log",
+      "case": "perf_read",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 48128,
+      "metrics": [
+        {
+          "phase": "get_hit",
+          "ops": 100000,
+          "seconds": 0.157722,
+          "ops_per_second": 634028,
+          "p50_us": 1.36,
+          "p95_us": 2.288,
+          "p99_us": 2.825,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29160177
+        },
+        {
+          "phase": "get_miss",
+          "ops": 100000,
+          "seconds": 0.0282942,
+          "ops_per_second": 3534300.0,
+          "p50_us": 0.269,
+          "p95_us": 0.293,
+          "p99_us": 0.309,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29160177
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.21547023579478264,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_reopen-n10000-t1-e50-r1/run.log",
+      "case": "perf_reopen",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "open",
+          "ops": 1,
+          "seconds": 0.0313164,
+          "ops_per_second": 31.9321,
+          "p50_us": 31315.1,
+          "p95_us": 31315.1,
+          "p99_us": 31315.1,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 180393,
+          "db_directory_bytes_after_drain": 2924978
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.1649576909840107,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_reopen-n10000-t1-e50-r2/run.log",
+      "case": "perf_reopen",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "open",
+          "ops": 1,
+          "seconds": 0.0135038,
+          "ops_per_second": 74.0532,
+          "p50_us": 13502.9,
+          "p95_us": 13502.9,
+          "p99_us": 13502.9,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 180393,
+          "db_directory_bytes_after_drain": 2924978
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.16494258120656013,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_reopen-n10000-t1-e50-r3/run.log",
+      "case": "perf_reopen",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "open",
+          "ops": 1,
+          "seconds": 0.0241029,
+          "ops_per_second": 41.4888,
+          "p50_us": 24102,
+          "p95_us": 24102,
+          "p99_us": 24102,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 180393,
+          "db_directory_bytes_after_drain": 2924978
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4674696661531925,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_reopen-n100000-t1-e50-r1/run.log",
+      "case": "perf_reopen",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 81964,
+      "metrics": [
+        {
+          "phase": "open",
+          "ops": 1,
+          "seconds": 0.188531,
+          "ops_per_second": 5.30417,
+          "p50_us": 188530,
+          "p95_us": 188530,
+          "p99_us": 188530,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 1802168,
+          "db_directory_bytes_after_drain": 29220730
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4179231598973274,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_reopen-n100000-t1-e50-r2/run.log",
+      "case": "perf_reopen",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 84680,
+      "metrics": [
+        {
+          "phase": "open",
+          "ops": 1,
+          "seconds": 0.194454,
+          "ops_per_second": 5.1426,
+          "p50_us": 194453,
+          "p95_us": 194453,
+          "p99_us": 194453,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 1802168,
+          "db_directory_bytes_after_drain": 29220653
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.4181107841432095,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_reopen-n100000-t1-e50-r3/run.log",
+      "case": "perf_reopen",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 84188,
+      "metrics": [
+        {
+          "phase": "open",
+          "ops": 1,
+          "seconds": 0.188793,
+          "ops_per_second": 5.2968,
+          "p50_us": 188792,
+          "p95_us": 188792,
+          "p99_us": 188792,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 1802168,
+          "db_directory_bytes_after_drain": 29220653
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.0647420696914196,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_scan-n10000-t1-e50-r1/run.log",
+      "case": "perf_scan",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "scan",
+          "ops": 10000,
+          "seconds": 0.00319409,
+          "ops_per_second": 3130780.0,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2916747
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.06460431590676308,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_scan-n10000-t1-e50-r2/run.log",
+      "case": "perf_scan",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "scan",
+          "ops": 10000,
+          "seconds": 0.00319487,
+          "ops_per_second": 3130020.0,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2916670
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.06481742486357689,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_scan-n10000-t1-e50-r3/run.log",
+      "case": "perf_scan",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "scan",
+          "ops": 10000,
+          "seconds": 0.00320288,
+          "ops_per_second": 3122190.0,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2916670
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.5152180790901184,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_scan-n100000-t1-e50-r1/run.log",
+      "case": "perf_scan",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 48128,
+      "metrics": [
+        {
+          "phase": "scan",
+          "ops": 100000,
+          "seconds": 0.0326384,
+          "ops_per_second": 3063870.0,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29160023
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.46477358415722847,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_scan-n100000-t1-e50-r2/run.log",
+      "case": "perf_scan",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 46592,
+      "metrics": [
+        {
+          "phase": "scan",
+          "ops": 100000,
+          "seconds": 0.0326053,
+          "ops_per_second": 3066990.0,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29160331
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.4651121720671654,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_scan-n100000-t1-e50-r3/run.log",
+      "case": "perf_scan",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 49152,
+      "metrics": [
+        {
+          "phase": "scan",
+          "ops": 100000,
+          "seconds": 0.0324341,
+          "ops_per_second": 3083170.0,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29160023
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.06504851952195168,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_stats-n10000-t1-e50-r1/run.log",
+      "case": "perf_stats",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "stats_query",
+          "ops": 10000,
+          "seconds": 0.00283941,
+          "ops_per_second": 3521860.0,
+          "p50_us": 0.043,
+          "p95_us": 0.045,
+          "p99_us": 0.046,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2916671
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.06455586850643158,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_stats-n10000-t1-e50-r2/run.log",
+      "case": "perf_stats",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "stats_query",
+          "ops": 10000,
+          "seconds": 0.00289051,
+          "ops_per_second": 3459600.0,
+          "p50_us": 0.043,
+          "p95_us": 0.045,
+          "p99_us": 0.045,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2916671
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.06433437019586563,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_stats-n10000-t1-e50-r3/run.log",
+      "case": "perf_stats",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "stats_query",
+          "ops": 10000,
+          "seconds": 0.00303849,
+          "ops_per_second": 3291110.0,
+          "p50_us": 0.044,
+          "p95_us": 0.046,
+          "p99_us": 0.046,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2916748
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.46583617851138115,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_stats-n100000-t1-e50-r1/run.log",
+      "case": "perf_stats",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 23552,
+      "metrics": [
+        {
+          "phase": "stats_query",
+          "ops": 100000,
+          "seconds": 0.0309388,
+          "ops_per_second": 3232190.0,
+          "p50_us": 0.044,
+          "p95_us": 0.045,
+          "p99_us": 0.046,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29160178
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.46582283824682236,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_stats-n100000-t1-e50-r2/run.log",
+      "case": "perf_stats",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 25600,
+      "metrics": [
+        {
+          "phase": "stats_query",
+          "ops": 100000,
+          "seconds": 0.0309877,
+          "ops_per_second": 3227090.0,
+          "p50_us": 0.043,
+          "p95_us": 0.045,
+          "p99_us": 0.046,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29160101
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.46544696763157845,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_stats-n100000-t1-e50-r3/run.log",
+      "case": "perf_stats",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 24576,
+      "metrics": [
+        {
+          "phase": "stats_query",
+          "ops": 100000,
+          "seconds": 0.0307568,
+          "ops_per_second": 3251310.0,
+          "p50_us": 0.043,
+          "p95_us": 0.045,
+          "p99_us": 0.046,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29160101
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.2143297828733921,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_stats_under_write-n10000-t1-e50-r1/run.log",
+      "case": "perf_stats_under_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.048335,
+          "ops_per_second": 206890,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5817113,
+          "db_directory_bytes_after_drain": 5833427
+        },
+        {
+          "phase": "put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0531602,
+          "ops_per_second": 188110,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5831951,
+          "db_directory_bytes_after_drain": 5833350
+        },
+        {
+          "phase": "stats_under_write",
+          "ops": 247119,
+          "seconds": 0.0531086,
+          "ops_per_second": 4653080.0,
+          "p50_us": 0.04,
+          "p95_us": 0.049,
+          "p99_us": 6.188,
+          "latency_samples": 3862,
+          "append_bytes_during_phase": 5831951,
+          "db_directory_bytes_after_drain": 5833350
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.21492428705096245,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_stats_under_write-n10000-t1-e50-r2/run.log",
+      "case": "perf_stats_under_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0464147,
+          "ops_per_second": 215449,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5831951,
+          "db_directory_bytes_after_drain": 5833350
+        },
+        {
+          "phase": "stats_under_write",
+          "ops": 173886,
+          "seconds": 0.0463656,
+          "ops_per_second": 3750330.0,
+          "p50_us": 0.04,
+          "p95_us": 0.07,
+          "p99_us": 6.069,
+          "latency_samples": 2717,
+          "append_bytes_during_phase": 5831951,
+          "db_directory_bytes_after_drain": 5833350
+        },
+        {
+          "phase": "put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0460363,
+          "ops_per_second": 217220,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5831951,
+          "db_directory_bytes_after_drain": 5833350
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.2146756909787655,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_stats_under_write-n10000-t1-e50-r3/run.log",
+      "case": "perf_stats_under_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0485515,
+          "ops_per_second": 205967,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5817113,
+          "db_directory_bytes_after_drain": 5833427
+        },
+        {
+          "phase": "put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0567485,
+          "ops_per_second": 176216,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 5831951,
+          "db_directory_bytes_after_drain": 5833350
+        },
+        {
+          "phase": "stats_under_write",
+          "ops": 260667,
+          "seconds": 0.0566969,
+          "ops_per_second": 4597550.0,
+          "p50_us": 0.041,
+          "p95_us": 0.047,
+          "p99_us": 6.184,
+          "latency_samples": 4073,
+          "append_bytes_during_phase": 5831951,
+          "db_directory_bytes_after_drain": 5833350
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.3147145248949528,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_stats_under_write-n10000-t8-e50-r1/run.log",
+      "case": "perf_stats_under_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0931072,
+          "ops_per_second": 107403,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9044744,
+          "db_directory_bytes_after_drain": 6038774
+        },
+        {
+          "phase": "put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0813289,
+          "ops_per_second": 122958,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9043046,
+          "db_directory_bytes_after_drain": 6038252
+        },
+        {
+          "phase": "stats_under_write",
+          "ops": 238918,
+          "seconds": 0.0810767,
+          "ops_per_second": 2946820.0,
+          "p50_us": 0.082,
+          "p95_us": 0.132,
+          "p99_us": 5.596,
+          "latency_samples": 3734,
+          "append_bytes_during_phase": 9042751,
+          "db_directory_bytes_after_drain": 6038252
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.3151698298752308,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_stats_under_write-n10000-t8-e50-r2/run.log",
+      "case": "perf_stats_under_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0850025,
+          "ops_per_second": 117644,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 7917409,
+          "db_directory_bytes_after_drain": 5968356
+        },
+        {
+          "phase": "stats_under_write",
+          "ops": 442695,
+          "seconds": 0.0845553,
+          "ops_per_second": 5235570.0,
+          "p50_us": 0.042,
+          "p95_us": 0.072,
+          "p99_us": 0.711,
+          "latency_samples": 6918,
+          "append_bytes_during_phase": 7906703,
+          "db_directory_bytes_after_drain": 5968356
+        },
+        {
+          "phase": "put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0903781,
+          "ops_per_second": 110646,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9118504,
+          "db_directory_bytes_after_drain": 6039994
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.3149360232055187,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_stats_under_write-n10000-t8-e50-r3/run.log",
+      "case": "perf_stats_under_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0912581,
+          "ops_per_second": 109579,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9045144,
+          "db_directory_bytes_after_drain": 6038686
+        },
+        {
+          "phase": "put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.0920096,
+          "ops_per_second": 108684,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 9052088,
+          "db_directory_bytes_after_drain": 6039712
+        },
+        {
+          "phase": "stats_under_write",
+          "ops": 322347,
+          "seconds": 0.0918006,
+          "ops_per_second": 3511380.0,
+          "p50_us": 0.057,
+          "p95_us": 0.106,
+          "p99_us": 1.429,
+          "latency_samples": 5037,
+          "append_bytes_during_phase": 9051793,
+          "db_directory_bytes_after_drain": 6039712
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.8677733391523361,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_stats_under_write-n100000-t1-e50-r1/run.log",
+      "case": "perf_stats_under_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 48384,
+      "metrics": [
+        {
+          "phase": "put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 0.464926,
+          "ops_per_second": 215088,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 58649320,
+          "db_directory_bytes_after_drain": 58322592
+        },
+        {
+          "phase": "put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 0.480193,
+          "ops_per_second": 208249,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 58649320,
+          "db_directory_bytes_after_drain": 58322746
+        },
+        {
+          "phase": "stats_under_write",
+          "ops": 1626734,
+          "seconds": 0.480145,
+          "ops_per_second": 3388010.0,
+          "p50_us": 0.04,
+          "p95_us": 0.104,
+          "p99_us": 6.176,
+          "latency_samples": 25418,
+          "append_bytes_during_phase": 58649320,
+          "db_directory_bytes_after_drain": 58322746
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.8674617633223534,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_stats_under_write-n100000-t1-e50-r2/run.log",
+      "case": "perf_stats_under_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 48848,
+      "metrics": [
+        {
+          "phase": "put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 0.497972,
+          "ops_per_second": 200815,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 58649320,
+          "db_directory_bytes_after_drain": 58322592
+        },
+        {
+          "phase": "stats_under_write",
+          "ops": 1712141,
+          "seconds": 0.497925,
+          "ops_per_second": 3438550.0,
+          "p50_us": 0.041,
+          "p95_us": 0.094,
+          "p99_us": 6.245,
+          "latency_samples": 26753,
+          "append_bytes_during_phase": 58649320,
+          "db_directory_bytes_after_drain": 58322592
+        },
+        {
+          "phase": "put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 0.460594,
+          "ops_per_second": 217111,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 58649320,
+          "db_directory_bytes_after_drain": 58322592
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.7174388356506824,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_stats_under_write-n100000-t1-e50-r3/run.log",
+      "case": "perf_stats_under_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 49828,
+      "metrics": [
+        {
+          "phase": "put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 0.402754,
+          "ops_per_second": 248290,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 58649320,
+          "db_directory_bytes_after_drain": 58322746
+        },
+        {
+          "phase": "put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 0.447643,
+          "ops_per_second": 223392,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 58649320,
+          "db_directory_bytes_after_drain": 58322746
+        },
+        {
+          "phase": "stats_under_write",
+          "ops": 1849403,
+          "seconds": 0.447604,
+          "ops_per_second": 4131780.0,
+          "p50_us": 0.04,
+          "p95_us": 0.051,
+          "p99_us": 6.129,
+          "latency_samples": 28897,
+          "append_bytes_during_phase": 58649320,
+          "db_directory_bytes_after_drain": 58322746
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 4.273771457374096,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_stats_under_write-n100000-t8-e50-r1/run.log",
+      "case": "perf_stats_under_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 44176,
+      "metrics": [
+        {
+          "phase": "put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 1.47578,
+          "ops_per_second": 67760.6,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 122534942,
+          "db_directory_bytes_after_drain": 63418453
+        },
+        {
+          "phase": "put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 1.60651,
+          "ops_per_second": 62246.7,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 117676896,
+          "db_directory_bytes_after_drain": 63065104
+        },
+        {
+          "phase": "stats_under_write",
+          "ops": 4282197,
+          "seconds": 1.60628,
+          "ops_per_second": 2665910.0,
+          "p50_us": 0.079,
+          "p95_us": 0.177,
+          "p99_us": 1.511,
+          "latency_samples": 66910,
+          "append_bytes_during_phase": 117797120,
+          "db_directory_bytes_after_drain": 63065104
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 3.9747052527964115,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_stats_under_write-n100000-t8-e50-r2/run.log",
+      "case": "perf_stats_under_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 42656,
+      "metrics": [
+        {
+          "phase": "put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 1.37537,
+          "ops_per_second": 72707.7,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 116025226,
+          "db_directory_bytes_after_drain": 62985091
+        },
+        {
+          "phase": "stats_under_write",
+          "ops": 4307380,
+          "seconds": 1.37482,
+          "ops_per_second": 3133040.0,
+          "p50_us": 0.06,
+          "p95_us": 0.166,
+          "p99_us": 1.22,
+          "latency_samples": 67303,
+          "append_bytes_during_phase": 116492868,
+          "db_directory_bytes_after_drain": 62985091
+        },
+        {
+          "phase": "put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 1.57473,
+          "ops_per_second": 63503.1,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 126061713,
+          "db_directory_bytes_after_drain": 63633597
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 3.9222073927521706,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_stats_under_write-n100000-t8-e50-r3/run.log",
+      "case": "perf_stats_under_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 44072,
+      "metrics": [
+        {
+          "phase": "put_without_stats_queries",
+          "ops": 100000,
+          "seconds": 1.48202,
+          "ops_per_second": 67475.4,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 128678577,
+          "db_directory_bytes_after_drain": 63835630
+        },
+        {
+          "phase": "put_with_stats_queries",
+          "ops": 100000,
+          "seconds": 1.44822,
+          "ops_per_second": 69050.2,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 119209374,
+          "db_directory_bytes_after_drain": 63200173
+        },
+        {
+          "phase": "stats_under_write",
+          "ops": 4329137,
+          "seconds": 1.44801,
+          "ops_per_second": 2989710.0,
+          "p50_us": 0.072,
+          "p95_us": 0.169,
+          "p99_us": 1.209,
+          "latency_samples": 67643,
+          "append_bytes_during_phase": 119968001,
+          "db_directory_bytes_after_drain": 63200173
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.11421749368309975,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_gc-n10000-t1-e50-r1/run.log",
+      "case": "perf_ttl_gc",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_full_gc",
+          "ops": 10000,
+          "seconds": 0.00871439,
+          "ops_per_second": 1147530.0,
+          "p50_us": 8713.18,
+          "p95_us": 8713.18,
+          "p99_us": 8713.18,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 57,
+          "db_directory_bytes_after_drain": 916652
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.11449827998876572,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_gc-n10000-t1-e50-r2/run.log",
+      "case": "perf_ttl_gc",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_full_gc",
+          "ops": 10000,
+          "seconds": 0.00882341,
+          "ops_per_second": 1133350.0,
+          "p50_us": 8822.13,
+          "p95_us": 8822.13,
+          "p99_us": 8822.13,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 57,
+          "db_directory_bytes_after_drain": 916575
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.1146748885512352,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_gc-n10000-t1-e50-r3/run.log",
+      "case": "perf_ttl_gc",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_full_gc",
+          "ops": 10000,
+          "seconds": 0.00853362,
+          "ops_per_second": 1171840.0,
+          "p50_us": 8532.59,
+          "p95_us": 8532.59,
+          "p99_us": 8532.59,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 57,
+          "db_directory_bytes_after_drain": 916652
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.1661295555531979,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_gc-n100000-t1-e50-r1/run.log",
+      "case": "perf_ttl_gc",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 69700,
+      "metrics": [
+        {
+          "phase": "ttl_full_gc",
+          "ops": 100000,
+          "seconds": 0.0920138,
+          "ops_per_second": 1086790.0,
+          "p50_us": 92012.8,
+          "p95_us": 92012.8,
+          "p99_us": 92012.8,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 241,
+          "db_directory_bytes_after_drain": 9135420
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.3179853111505508,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_gc-n100000-t1-e50-r2/run.log",
+      "case": "perf_ttl_gc",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 67188,
+      "metrics": [
+        {
+          "phase": "ttl_full_gc",
+          "ops": 100000,
+          "seconds": 0.105103,
+          "ops_per_second": 951444,
+          "p50_us": 105101,
+          "p95_us": 105101,
+          "p99_us": 105101,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 241,
+          "db_directory_bytes_after_drain": 9135420
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.2668510638177395,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_gc-n100000-t1-e50-r3/run.log",
+      "case": "perf_ttl_gc",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 66920,
+      "metrics": [
+        {
+          "phase": "ttl_full_gc",
+          "ops": 100000,
+          "seconds": 0.116596,
+          "ops_per_second": 857666,
+          "p50_us": 116593,
+          "p95_us": 116593,
+          "p99_us": 116593,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 241,
+          "db_directory_bytes_after_drain": 9135420
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.06477523595094681,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_mixed-n10000-t1-e0-r1/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 0,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 10000,
+          "seconds": 0.0113483,
+          "ops_per_second": 881190,
+          "p50_us": 1.006,
+          "p95_us": 1.445,
+          "p99_us": 1.566,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2998579
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.06466563791036606,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_mixed-n10000-t1-e0-r2/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 0,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 10000,
+          "seconds": 0.0113035,
+          "ops_per_second": 884679,
+          "p50_us": 0.99,
+          "p95_us": 1.363,
+          "p99_us": 1.655,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2998656
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.06477929651737213,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_mixed-n10000-t1-e0-r3/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 0,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 10000,
+          "seconds": 0.0114423,
+          "ops_per_second": 873947,
+          "p50_us": 0.994,
+          "p95_us": 1.4,
+          "p99_us": 2.045,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2998733
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.06461689621210098,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_mixed-n10000-t1-e50-r1/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 10000,
+          "seconds": 0.0114608,
+          "ops_per_second": 872542,
+          "p50_us": 1.047,
+          "p95_us": 1.331,
+          "p99_us": 1.705,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2998657
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.0642307847738266,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_mixed-n10000-t1-e50-r2/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 10000,
+          "seconds": 0.0115443,
+          "ops_per_second": 866227,
+          "p50_us": 0.993,
+          "p95_us": 1.686,
+          "p99_us": 1.99,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2998580
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.0638502724468708,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_mixed-n10000-t1-e50-r3/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 10000,
+          "seconds": 0.0109104,
+          "ops_per_second": 916561,
+          "p50_us": 0.987,
+          "p95_us": 1.406,
+          "p99_us": 1.633,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2998657
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.11611663177609444,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_mixed-n10000-t1-e100-r1/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 100,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 10000,
+          "seconds": 0.0161041,
+          "ops_per_second": 620958,
+          "p50_us": 1.695,
+          "p95_us": 2.314,
+          "p99_us": 2.662,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2998581
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.06406061723828316,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_mixed-n10000-t1-e100-r2/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 100,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 10000,
+          "seconds": 0.0101501,
+          "ops_per_second": 985209,
+          "p50_us": 0.952,
+          "p95_us": 1.249,
+          "p99_us": 1.481,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2998581
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.06402280926704407,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_mixed-n10000-t1-e100-r3/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 100,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 10000,
+          "seconds": 0.0102121,
+          "ops_per_second": 979227,
+          "p50_us": 0.95,
+          "p95_us": 1.434,
+          "p99_us": 1.905,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2998735
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.6155479103326797,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_mixed-n100000-t1-e0-r1/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 0,
+      "peak_rss_kib": 48640,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 100000,
+          "seconds": 0.154703,
+          "ops_per_second": 646402,
+          "p50_us": 1.339,
+          "p95_us": 2.174,
+          "p99_us": 2.736,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29979632
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.6660466007888317,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_mixed-n100000-t1-e0-r2/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 0,
+      "peak_rss_kib": 49152,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 100000,
+          "seconds": 0.147937,
+          "ops_per_second": 675964,
+          "p50_us": 1.327,
+          "p95_us": 1.902,
+          "p99_us": 2.336,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29979709
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.5658478997647762,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_mixed-n100000-t1-e0-r3/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 0,
+      "peak_rss_kib": 46592,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 100000,
+          "seconds": 0.145309,
+          "ops_per_second": 688188,
+          "p50_us": 1.291,
+          "p95_us": 1.845,
+          "p99_us": 2.37,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29979940
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.6161227636039257,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_mixed-n100000-t1-e50-r1/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 45056,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 100000,
+          "seconds": 0.153652,
+          "ops_per_second": 650822,
+          "p50_us": 1.363,
+          "p95_us": 2.268,
+          "p99_us": 2.772,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29980018
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.6164271049201488,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_mixed-n100000-t1-e50-r2/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 47616,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 100000,
+          "seconds": 0.144032,
+          "ops_per_second": 694291,
+          "p50_us": 1.298,
+          "p95_us": 2.086,
+          "p99_us": 2.659,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29980095
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.6160185523331165,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_mixed-n100000-t1-e50-r3/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 48640,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 100000,
+          "seconds": 0.144534,
+          "ops_per_second": 691877,
+          "p50_us": 1.306,
+          "p95_us": 2.066,
+          "p99_us": 2.582,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29979864
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.5659744143486023,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_mixed-n100000-t1-e100-r1/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 100,
+      "peak_rss_kib": 49152,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 100000,
+          "seconds": 0.129531,
+          "ops_per_second": 772013,
+          "p50_us": 1.213,
+          "p95_us": 1.749,
+          "p99_us": 2.186,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29979942
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.669148400425911,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_mixed-n100000-t1-e100-r2/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 100,
+      "peak_rss_kib": 47104,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 100000,
+          "seconds": 0.14571,
+          "ops_per_second": 686296,
+          "p50_us": 1.343,
+          "p95_us": 2.286,
+          "p99_us": 2.802,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29980019
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.6154056526720524,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_mixed-n100000-t1-e100-r3/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 100,
+      "peak_rss_kib": 47104,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 100000,
+          "seconds": 0.139087,
+          "ops_per_second": 718972,
+          "p50_us": 1.296,
+          "p95_us": 1.978,
+          "p99_us": 2.475,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 29980096
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.06483737751841545,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_write-n10000-t1-e50-r1/run.log",
+      "case": "perf_ttl_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put",
+          "ops": 10000,
+          "seconds": 0.0388014,
+          "ops_per_second": 257723,
+          "p50_us": 3.331,
+          "p95_us": 5.994,
+          "p99_us": 9.256,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 5927088,
+          "db_directory_bytes_after_drain": 2999244
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.06449241563677788,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_write-n10000-t1-e50-r2/run.log",
+      "case": "perf_ttl_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put",
+          "ops": 10000,
+          "seconds": 0.0431344,
+          "ops_per_second": 231833,
+          "p50_us": 3.76,
+          "p95_us": 6.635,
+          "p99_us": 7.063,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 5927088,
+          "db_directory_bytes_after_drain": 2999167
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.06435427442193031,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_write-n10000-t1-e50-r3/run.log",
+      "case": "perf_ttl_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "ttl_put",
+          "ops": 10000,
+          "seconds": 0.0389445,
+          "ops_per_second": 256776,
+          "p50_us": 3.365,
+          "p95_us": 6.287,
+          "p99_us": 14.549,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 5927088,
+          "db_directory_bytes_after_drain": 2999244
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.5653550177812576,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_write-n100000-t1-e50-r1/run.log",
+      "case": "perf_ttl_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 47616,
+      "metrics": [
+        {
+          "phase": "ttl_put",
+          "ops": 100000,
+          "seconds": 0.417775,
+          "ops_per_second": 239363,
+          "p50_us": 3.533,
+          "p95_us": 6.623,
+          "p99_us": 12.278,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 60145658,
+          "db_directory_bytes_after_drain": 29980933
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.6157062202692032,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_write-n100000-t1-e50-r2/run.log",
+      "case": "perf_ttl_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 47616,
+      "metrics": [
+        {
+          "phase": "ttl_put",
+          "ops": 100000,
+          "seconds": 0.447646,
+          "ops_per_second": 223391,
+          "p50_us": 3.801,
+          "p95_us": 7.038,
+          "p99_us": 9.214,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 60145658,
+          "db_directory_bytes_after_drain": 29980856
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.5660755187273026,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_ttl_write-n100000-t1-e50-r3/run.log",
+      "case": "perf_ttl_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 48640,
+      "metrics": [
+        {
+          "phase": "ttl_put",
+          "ops": 100000,
+          "seconds": 0.395946,
+          "ops_per_second": 252560,
+          "p50_us": 3.467,
+          "p95_us": 6.272,
+          "p99_us": 8.487,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 60145658,
+          "db_directory_bytes_after_drain": 29980779
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.11655287817120552,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_write-n10000-t1-e50-r1/run.log",
+      "case": "perf_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "put",
+          "ops": 10000,
+          "seconds": 0.0792364,
+          "ops_per_second": 126205,
+          "p50_us": 5.791,
+          "p95_us": 9.797,
+          "p99_us": 13.415,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 5802256,
+          "db_directory_bytes_after_drain": 2917025
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.11855244264006615,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_write-n10000-t1-e50-r2/run.log",
+      "case": "perf_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "put",
+          "ops": 10000,
+          "seconds": 0.0697356,
+          "ops_per_second": 143399,
+          "p50_us": 5.717,
+          "p95_us": 9.984,
+          "p99_us": 11.847,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 5802256,
+          "db_directory_bytes_after_drain": 2917025
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.0639890767633915,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_write-n10000-t1-e50-r3/run.log",
+      "case": "perf_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 10000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": [
+        {
+          "phase": "put",
+          "ops": 10000,
+          "seconds": 0.036411,
+          "ops_per_second": 274642,
+          "p50_us": 3.236,
+          "p95_us": 6.072,
+          "p99_us": 7.056,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 5802256,
+          "db_directory_bytes_after_drain": 2916871
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.5650777816772461,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_write-n100000-t1-e50-r1/run.log",
+      "case": "perf_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 48128,
+      "metrics": [
+        {
+          "phase": "put",
+          "ops": 100000,
+          "seconds": 0.387918,
+          "ops_per_second": 257786,
+          "p50_us": 3.383,
+          "p95_us": 6.083,
+          "p99_us": 10.484,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 58410224,
+          "db_directory_bytes_after_drain": 29162888
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.5653167739510536,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_write-n100000-t1-e50-r2/run.log",
+      "case": "perf_write",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 45568,
+      "metrics": [
+        {
+          "phase": "put",
+          "ops": 100000,
+          "seconds": 0.430169,
+          "ops_per_second": 232467,
+          "p50_us": 3.753,
+          "p95_us": 6.599,
+          "p99_us": 9.155,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 58410224,
+          "db_directory_bytes_after_drain": 29162888
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.5656678527593613,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/perf_write-n100000-t1-e50-r3/run.log",
+      "case": "perf_write",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 1,
+      "expired_percent": 50,
+      "peak_rss_kib": 47616,
+      "metrics": [
+        {
+          "phase": "put",
+          "ops": 100000,
+          "seconds": 0.390557,
+          "ops_per_second": 256045,
+          "p50_us": 3.407,
+          "p95_us": 6.129,
+          "p99_us": 8.536,
+          "latency_samples": 1563,
+          "append_bytes_during_phase": 58410224,
+          "db_directory_bytes_after_drain": 29163042
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.007989879697561264,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/ttl_contract-n100000-t8-e50-r1/run.log",
+      "case": "ttl_contract",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.0036361441016197205,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/ttl_contract-n100000-t8-e50-r2/run.log",
+      "case": "ttl_contract",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.007826656103134155,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/ttl_contract-n100000-t8-e50-r3/run.log",
+      "case": "ttl_contract",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.015996519476175308,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/ttl_views-n100000-t8-e50-r1/run.log",
+      "case": "ttl_views",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.016310736536979675,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/ttl_views-n100000-t8-e50-r2/run.log",
+      "case": "ttl_views",
+      "repeat": 2,
+      "seed": 7774597,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.0162355899810791,
+      "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/ttl_views-n100000-t8-e50-r3/run.log",
+      "case": "ttl_views",
+      "repeat": 3,
+      "seed": 7774598,
+      "keys": 100000,
+      "threads": 8,
+      "expired_percent": 50,
+      "peak_rss_kib": 19968,
+      "metrics": []
+    }
+  ],
+  "status": "pass",
+  "suite_scope": "public",
+  "selected_cases": null,
+  "regression_requested": true,
+  "sanitize": false,
+  "memory_limit_mib": 0,
+  "performance_scoring": "ungraded; calibration only",
+  "configure": {
+    "status": "pass",
+    "returncode": 0,
+    "seconds": 2.018026564270258,
+    "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/configure.log"
+  },
+  "build": {
+    "status": "pass",
+    "returncode": 0,
+    "seconds": 13.843355126678944,
+    "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/build.log"
+  },
+  "available_cases": [
+    "combined_concurrent",
+    "combined_contract",
+    "combined_gc",
+    "combined_overwrites",
+    "combined_reopen",
+    "combined_views",
+    "metadata_contract",
+    "metadata_reopen",
+    "perf_combined_gc",
+    "perf_combined_stats_under_write",
+    "perf_concurrent",
+    "perf_read",
+    "perf_reopen",
+    "perf_scan",
+    "perf_stats",
+    "perf_stats_under_write",
+    "perf_ttl_gc",
+    "perf_ttl_mixed",
+    "perf_ttl_write",
+    "perf_write",
+    "ttl_contract",
+    "ttl_views"
+  ],
+  "executed_cases": [
+    "combined_concurrent",
+    "combined_contract",
+    "combined_gc",
+    "combined_overwrites",
+    "combined_reopen",
+    "combined_views",
+    "metadata_contract",
+    "metadata_reopen",
+    "perf_combined_gc",
+    "perf_combined_stats_under_write",
+    "perf_concurrent",
+    "perf_read",
+    "perf_reopen",
+    "perf_scan",
+    "perf_stats",
+    "perf_stats_under_write",
+    "perf_ttl_gc",
+    "perf_ttl_mixed",
+    "perf_ttl_write",
+    "perf_write",
+    "ttl_contract",
+    "ttl_views"
+  ],
+  "full_suite": true,
+  "regression_build": {
+    "status": "pass",
+    "returncode": 0,
+    "seconds": 39.84736183285713,
+    "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/regression-build.log"
+  },
+  "regression": {
+    "status": "pass",
+    "runs": [
+      {
+        "status": "pass",
+        "returncode": 0,
+        "seconds": 78.28664952516556,
+        "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/homework_regression.log"
+      },
+      {
+        "status": "pass",
+        "returncode": 0,
+        "seconds": 0.16476468741893768,
+        "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/homework_c_regression.log"
+      },
+      {
+        "status": "pass",
+        "returncode": 0,
+        "seconds": 0.016632508486509323,
+        "log": "/home/joeyxzy/db_class/leveldb_project1/build/evaluation-combined-standard-20261029-195401/homework_env_regression.log"
+      }
+    ]
+  }
+}

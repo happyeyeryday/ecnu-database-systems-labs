@@ -1,0 +1,13 @@
+COMMAND ["/tmp/leveldb-repro-7px_6ah_/ttl_test", "--gtest_output=xml:/mnt/d/zzr/\u5927\u56db\u8bfe\u7a0b/\u6570\u636e\u5e93plus/project1/reproduction_20261103/ttl_test.xml"]
+[==========] Running 2 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 2 tests from TestTTL
+[ RUN      ] TestTTL.ReadTTL
+[       OK ] TestTTL.ReadTTL (21967 ms)
+[ RUN      ] TestTTL.CompactionTTL
+[       OK ] TestTTL.CompactionTTL (22820 ms)
+[----------] 2 tests from TestTTL (44789 ms total)
+
+[----------] Global test environment tear-down
+[==========] 2 tests from 1 test suite ran. (44791 ms total)
+[  PASSED  ] 2 tests.

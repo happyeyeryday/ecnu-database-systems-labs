@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="2" failures="0" disabled="0" errors="0" time="44.791" timestamp="2026-11-03T11:34:08.872" name="AllTests">
+  <testsuite name="TestTTL" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="44.789" timestamp="2026-11-03T11:34:08.873">
+    <testcase name="ReadTTL" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/test/ttl_test.cc" line="48" status="run" result="completed" time="21.967" timestamp="2026-11-03T11:34:08.873" classname="TestTTL" />
+    <testcase name="CompactionTTL" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/test/ttl_test.cc" line="83" status="run" result="completed" time="22.82" timestamp="2026-11-03T11:34:34.223" classname="TestTTL" />
+  </testsuite>
+</testsuites>

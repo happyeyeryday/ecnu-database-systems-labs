@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="275" failures="0" disabled="0" errors="0" time="104.67" timestamp="2026-11-03T11:34:59.208" name="AllTests">
+  <testsuite name="Status" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-03T11:34:59.209">
+    <testcase name="MoveConstructor" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/status_test.cc" line="14" status="run" result="completed" time="0." timestamp="2026-11-03T11:34:59.209" classname="Status" />
+  </testsuite>
+  <testsuite name="NoDestructorTest" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-03T11:34:59.210">
+    <testcase name="StackInstance" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/no_destructor_test.cc" line="32" status="run" result="completed" time="0." timestamp="2026-11-03T11:34:59.210" classname="NoDestructorTest" />
+    <testcase name="StaticInstance" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/no_destructor_test.cc" line="38" status="run" result="completed" time="0." timestamp="2026-11-03T11:34:59.211" classname="NoDestructorTest" />
+  </testsuite>
+  <testsuite name="AutoCompactTest" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="21.23" timestamp="2026-11-03T11:34:59.211">
+    <testcase name="ReadAll" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/autocompact_test.cc" line="106" status="run" result="completed" time="11.609" timestamp="2026-11-03T11:34:59.211" classname="AutoCompactTest" />
+    <testcase name="ReadHalf" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/autocompact_test.cc" line="108" status="run" result="completed" time="9.62" timestamp="2026-11-03T11:35:10.821" classname="AutoCompactTest" />
+  </testsuite>
+  <testsuite name="CorruptionTest" tests="12" failures="0" disabled="0" skipped="0" errors="0" time="0.355" timestamp="2026-11-03T11:35:20.442">
+    <testcase name="Recovery" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/corruption_test.cc" line="193" status="run" result="completed" time="0.001" timestamp="2026-11-03T11:35:20.443" classname="CorruptionTest" />
+    <testcase name="RecoverWriteError" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/corruption_test.cc" line="204" status="run" result="completed" time="0." timestamp="2026-11-03T11:35:20.444" classname="CorruptionTest" />
+    <testcase name="NewFileErrorDuringWrite" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/corruption_test.cc" line="210" status="run" result="completed" time="0.015" timestamp="2026-11-03T11:35:20.445" classname="CorruptionTest" />
+    <testcase name="TableFile" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/corruption_test.cc" line="227" status="run" result="completed" time="0.001" timestamp="2026-11-03T11:35:20.461" classname="CorruptionTest" />
+    <testcase name="TableFileRepair" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/corruption_test.cc" line="238" status="run" result="completed" time="0.001" timestamp="2026-11-03T11:35:20.463" classname="CorruptionTest" />
+    <testcase name="TableFileIndexData" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/corruption_test.cc" line="254" status="run" result="completed" time="0.071" timestamp="2026-11-03T11:35:20.464" classname="CorruptionTest" />
+    <testcase name="MissingDescriptor" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/corruption_test.cc" line="264" status="run" result="completed" time="0.006" timestamp="2026-11-03T11:35:20.536" classname="CorruptionTest" />
+    <testcase name="SequenceNumberRecovery" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/corruption_test.cc" line="271" status="run" result="completed" time="0." timestamp="2026-11-03T11:35:20.543" classname="CorruptionTest" />
+    <testcase name="CorruptedDescriptor" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/corruption_test.cc" line="292" status="run" result="completed" time="0." timestamp="2026-11-03T11:35:20.543" classname="CorruptionTest" />
+    <testcase name="CompactionInputError" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/corruption_test.cc" line="309" status="run" result="completed" time="0.049" timestamp="2026-11-03T11:35:20.544" classname="CorruptionTest" />
+    <testcase name="CompactionInputErrorParanoid" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/corruption_test.cc" line="324" status="run" result="completed" time="0.201" timestamp="2026-11-03T11:35:20.595" classname="CorruptionTest" />
+    <testcase name="UnrelatedKeys" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/corruption_test.cc" line="345" status="run" result="completed" time="0." timestamp="2026-11-03T11:35:20.797" classname="CorruptionTest" />
+  </testsuite>
+  <testsuite name="DBTest" tests="58" failures="0" disabled="0" skipped="0" errors="0" time="73.386" timestamp="2026-11-03T11:35:20.799">
+    <testcase name="Empty" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="571" status="run" result="completed" time="0.084" timestamp="2026-11-03T11:35:20.799" classname="DBTest" />
+    <testcase name="EmptyKey" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="578" status="run" result="completed" time="0.103" timestamp="2026-11-03T11:35:20.884" classname="DBTest" />
+    <testcase name="EmptyValue" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="587" status="run" result="completed" time="0.096" timestamp="2026-11-03T11:35:20.988" classname="DBTest" />
+    <testcase name="ReadWrite" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="598" status="run" result="completed" time="0.083" timestamp="2026-11-03T11:35:21.086" classname="DBTest" />
+    <testcase name="PutDeleteGet" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="609" status="run" result="completed" time="0.128" timestamp="2026-11-03T11:35:21.170" classname="DBTest" />
+    <testcase name="GetFromImmutableLayer" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="620" status="run" result="completed" time="0.201" timestamp="2026-11-03T11:35:21.300" classname="DBTest" />
+    <testcase name="GetFromVersions" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="640" status="run" result="completed" time="0.181" timestamp="2026-11-03T11:35:21.502" classname="DBTest" />
+    <testcase name="GetMemUsage" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="648" status="run" result="completed" time="0.116" timestamp="2026-11-03T11:35:21.684" classname="DBTest" />
+    <testcase name="GetSnapshot" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="659" status="run" result="completed" time="0.235" timestamp="2026-11-03T11:35:21.802" classname="DBTest" />
+    <testcase name="GetIdenticalSnapshots" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="677" status="run" result="completed" time="0.234" timestamp="2026-11-03T11:35:22.037" classname="DBTest" />
+    <testcase name="IterateOverEmptySnapshot" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="702" status="run" result="completed" time="0.198" timestamp="2026-11-03T11:35:22.273" classname="DBTest" />
+    <testcase name="GetLevel0Ordering" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="726" status="run" result="completed" time="0.239" timestamp="2026-11-03T11:35:22.472" classname="DBTest" />
+    <testcase name="GetOrderedByLevels" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="741" status="run" result="completed" time="0.239" timestamp="2026-11-03T11:35:22.712" classname="DBTest" />
+    <testcase name="GetPicksCorrectFile" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="753" status="run" result="completed" time="0.293" timestamp="2026-11-03T11:35:22.953" classname="DBTest" />
+    <testcase name="GetEncountersEmptyLevel" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="768" status="run" result="completed" time="4.352" timestamp="2026-11-03T11:35:23.246" classname="DBTest" />
+    <testcase name="IterEmpty" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="806" status="run" result="completed" time="0.037" timestamp="2026-11-03T11:35:29.725" classname="DBTest" />
+    <testcase name="IterSingle" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="821" status="run" result="completed" time="0.032" timestamp="2026-11-03T11:35:29.763" classname="DBTest" />
+    <testcase name="IterMulti" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="859" status="run" result="completed" time="0.032" timestamp="2026-11-03T11:35:29.796" classname="DBTest" />
+    <testcase name="IterSmallAndLargeMix" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="942" status="run" result="completed" time="0.037" timestamp="2026-11-03T11:35:29.829" classname="DBTest" />
+    <testcase name="IterMultiWithDelete" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="980" status="run" result="completed" time="0.122" timestamp="2026-11-03T11:35:29.867" classname="DBTest" />
+    <testcase name="IterMultiWithDeleteAndCompaction" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="997" status="run" result="completed" time="0.183" timestamp="2026-11-03T11:35:29.990" classname="DBTest" />
+    <testcase name="Recover" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1017" status="run" result="completed" time="0.255" timestamp="2026-11-03T11:35:30.174" classname="DBTest" />
+    <testcase name="RecoveryWithEmptyLog" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1039" status="run" result="completed" time="0.293" timestamp="2026-11-03T11:35:30.430" classname="DBTest" />
+    <testcase name="RecoverDuringMemtableCompaction" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1053" status="run" result="completed" time="0.437" timestamp="2026-11-03T11:35:30.724" classname="DBTest" />
+    <testcase name="MinorCompactionsHappen" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1082" status="run" result="completed" time="0.185" timestamp="2026-11-03T11:35:31.163" classname="DBTest" />
+    <testcase name="RecoverWithLargeLog" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1107" status="run" result="completed" time="0.085" timestamp="2026-11-03T11:35:31.349" classname="DBTest" />
+    <testcase name="CompactionsGenerateMultipleFiles" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1131" status="run" result="completed" time="0.165" timestamp="2026-11-03T11:35:31.435" classname="DBTest" />
+    <testcase name="RepeatedWritesToSameKey" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1157" status="run" result="completed" time="1.717" timestamp="2026-11-03T11:35:31.602" classname="DBTest" />
+    <testcase name="SparseMerge" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1176" status="run" result="completed" time="2.467" timestamp="2026-11-03T11:35:33.320" classname="DBTest" />
+    <testcase name="ApproximateSizes" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1226" status="run" result="completed" time="0.69" timestamp="2026-11-03T11:35:35.818" classname="DBTest" />
+    <testcase name="ApproximateSizes_MixOfSmallAndLarge" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1285" status="run" result="completed" time="0.405" timestamp="2026-11-03T11:35:36.509" classname="DBTest" />
+    <testcase name="IteratorPinsRef" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1328" status="run" result="completed" time="0.07" timestamp="2026-11-03T11:35:36.915" classname="DBTest" />
+    <testcase name="Snapshot" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1351" status="run" result="completed" time="0.116" timestamp="2026-11-03T11:35:36.986" classname="DBTest" />
+    <testcase name="HiddenValuesAreRemoved" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1380" status="run" result="completed" time="0.748" timestamp="2026-11-03T11:35:37.103" classname="DBTest" />
+    <testcase name="DeletionMarkers1" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1411" status="run" result="completed" time="0.108" timestamp="2026-11-03T11:35:37.852" classname="DBTest" />
+    <testcase name="DeletionMarkers2" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1440" status="run" result="completed" time="0.109" timestamp="2026-11-03T11:35:37.961" classname="DBTest" />
+    <testcase name="OverlapInLevel0" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1466" status="run" result="completed" time="0.423" timestamp="2026-11-03T11:35:38.071" classname="DBTest" />
+    <testcase name="L0_CompactionBug_Issue44_a" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1508" status="run" result="completed" time="1.167" timestamp="2026-11-03T11:35:38.496" classname="DBTest" />
+    <testcase name="L0_CompactionBug_Issue44_b" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1525" status="run" result="completed" time="2.309" timestamp="2026-11-03T11:35:39.664" classname="DBTest" />
+    <testcase name="Fflush_Issue474" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1551" status="run" result="completed" time="0.218" timestamp="2026-11-03T11:35:41.974" classname="DBTest" />
+    <testcase name="ComparatorCheck" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1560" status="run" result="completed" time="0.032" timestamp="2026-11-03T11:35:42.193" classname="DBTest" />
+    <testcase name="CustomComparator" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1583" status="run" result="completed" time="0.176" timestamp="2026-11-03T11:35:42.226" classname="DBTest" />
+    <testcase name="ManualCompaction" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1639" status="run" result="completed" time="0.251" timestamp="2026-11-03T11:35:42.403" classname="DBTest" />
+    <testcase name="DBOpen_Options" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1673" status="run" result="completed" time="0.079" timestamp="2026-11-03T11:35:42.654" classname="DBTest" />
+    <testcase name="DestroyEmptyDir" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1712" status="run" result="completed" time="0.028" timestamp="2026-11-03T11:35:42.734" classname="DBTest" />
+    <testcase name="DestroyOpenDB" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1746" status="run" result="completed" time="0.064" timestamp="2026-11-03T11:35:42.763" classname="DBTest" />
+    <testcase name="Locking" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1770" status="run" result="completed" time="0.033" timestamp="2026-11-03T11:35:42.828" classname="DBTest" />
+    <testcase name="NoSpace" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1777" status="run" result="completed" time="0.07" timestamp="2026-11-03T11:35:42.862" classname="DBTest" />
+    <testcase name="NonWritableFileSystem" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1797" status="run" result="completed" time="1.96" timestamp="2026-11-03T11:35:42.934" classname="DBTest" />
+    <testcase name="WriteSyncError" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1818" status="run" result="completed" time="0.053" timestamp="2026-11-03T11:35:44.895" classname="DBTest" />
+    <testcase name="ManifestWriteError" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1849" status="run" result="completed" time="0.172" timestamp="2026-11-03T11:35:44.949" classname="DBTest" />
+    <testcase name="MissingSSTFile" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1889" status="run" result="completed" time="0.042" timestamp="2026-11-03T11:35:45.123" classname="DBTest" />
+    <testcase name="StillReadSST" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1906" status="run" result="completed" time="0.062" timestamp="2026-11-03T11:35:45.166" classname="DBTest" />
+    <testcase name="FilesDeletedAfterCompaction" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1922" status="run" result="completed" time="0.323" timestamp="2026-11-03T11:35:45.229" classname="DBTest" />
+    <testcase name="BloomFilter" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1933" status="run" result="completed" time="0.216" timestamp="2026-11-03T11:35:45.552" classname="DBTest" />
+    <testcase name="LogCloseError" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="1980" status="run" result="completed" time="0.047" timestamp="2026-11-03T11:35:45.770" classname="DBTest" />
+    <testcase name="MultiThreaded" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="2072" status="run" result="completed" time="40.539" timestamp="2026-11-03T11:35:45.819" classname="DBTest" />
+    <testcase name="Randomized" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/db_test.cc" line="2292" status="run" result="completed" time="9.952" timestamp="2026-11-03T11:36:28.627" classname="DBTest" />
+  </testsuite>
+  <testsuite name="FormatTest" tests="6" failures="0" disabled="0" skipped="0" errors="0" time="0.002" timestamp="2026-11-03T11:36:40.841">
+    <testcase name="InternalKey_EncodeDecode" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/dbformat_test.cc" line="45" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.842" classname="FormatTest" />
+    <testcase name="InternalKey_DecodeFromEmpty" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/dbformat_test.cc" line="67" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.842" classname="FormatTest" />
+    <testcase name="InternalKeyShortSeparator" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/dbformat_test.cc" line="73" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.842" classname="FormatTest" />
+    <testcase name="InternalKeyShortestSuccessor" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/dbformat_test.cc" line="107" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.843" classname="FormatTest" />
+    <testcase name="ParsedInternalKeyDebugString" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/dbformat_test.cc" line="114" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.843" classname="FormatTest" />
+    <testcase name="InternalKeyDebugString" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/dbformat_test.cc" line="120" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.843" classname="FormatTest" />
+  </testsuite>
+  <testsuite name="FileNameTest" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="0.001" timestamp="2026-11-03T11:36:40.844">
+    <testcase name="Parse" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/filename_test.cc" line="14" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.844" classname="FileNameTest" />
+    <testcase name="Construction" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/filename_test.cc" line="73" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.845" classname="FileNameTest" />
+  </testsuite>
+  <testsuite name="LogTest" tests="38" failures="0" disabled="0" skipped="0" errors="0" time="0.032" timestamp="2026-11-03T11:36:40.845">
+    <testcase name="Empty" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="261" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.846" classname="LogTest" />
+    <testcase name="ReadWrite" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="263" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.846" classname="LogTest" />
+    <testcase name="ManyBlocks" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="276" status="run" result="completed" time="0.009" timestamp="2026-11-03T11:36:40.846" classname="LogTest" />
+    <testcase name="Fragmentation" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="286" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.856" classname="LogTest" />
+    <testcase name="MarginalTrailer" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="296" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.857" classname="LogTest" />
+    <testcase name="MarginalTrailer2" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="309" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.857" classname="LogTest" />
+    <testcase name="ShortTrailer" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="322" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.858" classname="LogTest" />
+    <testcase name="AlignedEof" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="334" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.858" classname="LogTest" />
+    <testcase name="OpenForAppend" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="342" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.859" classname="LogTest" />
+    <testcase name="RandomRead" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="351" status="run" result="completed" time="0.006" timestamp="2026-11-03T11:36:40.859" classname="LogTest" />
+    <testcase name="ReadError" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="366" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.866" classname="LogTest" />
+    <testcase name="BadRecordType" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="374" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.866" classname="LogTest" />
+    <testcase name="TruncatedTrailingRecordIsIgnored" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="384" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.867" classname="LogTest" />
+    <testcase name="BadLength" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="393" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.867" classname="LogTest" />
+    <testcase name="BadLengthAtEndIsIgnored" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="404" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.867" classname="LogTest" />
+    <testcase name="ChecksumMismatch" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="412" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.868" classname="LogTest" />
+    <testcase name="UnexpectedMiddleType" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="420" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.868" classname="LogTest" />
+    <testcase name="UnexpectedLastType" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="429" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.869" classname="LogTest" />
+    <testcase name="UnexpectedFullType" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="438" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.869" classname="LogTest" />
+    <testcase name="UnexpectedFirstType" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="449" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.869" classname="LogTest" />
+    <testcase name="MissingLastIsIgnored" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="460" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.870" classname="LogTest" />
+    <testcase name="PartialLastIsIgnored" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="469" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.870" classname="LogTest" />
+    <testcase name="SkipIntoMultiRecord" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="478" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.871" classname="LogTest" />
+    <testcase name="ErrorJoinsRecords" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="494" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.871" classname="LogTest" />
+    <testcase name="ReadStart" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="517" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.872" classname="LogTest" />
+    <testcase name="ReadSecondOneOff" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="519" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.872" classname="LogTest" />
+    <testcase name="ReadSecondTenThousand" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="521" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.872" classname="LogTest" />
+    <testcase name="ReadSecondStart" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="523" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.873" classname="LogTest" />
+    <testcase name="ReadThirdOneOff" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="525" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.873" classname="LogTest" />
+    <testcase name="ReadThirdStart" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="527" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.874" classname="LogTest" />
+    <testcase name="ReadFourthOneOff" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="529" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.874" classname="LogTest" />
+    <testcase name="ReadFourthFirstBlockTrailer" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="531" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.875" classname="LogTest" />
+    <testcase name="ReadFourthMiddleBlock" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="535" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.875" classname="LogTest" />
+    <testcase name="ReadFourthLastBlock" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="539" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.876" classname="LogTest" />
+    <testcase name="ReadFourthStart" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="543" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.876" classname="LogTest" />
+    <testcase name="ReadInitialOffsetIntoBlockPadding" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="549" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.877" classname="LogTest" />
+    <testcase name="ReadEnd" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="553" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.877" classname="LogTest" />
+    <testcase name="ReadPastEnd" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/log_test.cc" line="555" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.877" classname="LogTest" />
+  </testsuite>
+  <testsuite name="MetadataDeltaTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="0.001" timestamp="2026-11-03T11:36:40.878">
+    <testcase name="CountsEveryOperationIncludingTTLAndDeletion" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="159" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.879" classname="MetadataDeltaTest" />
+    <testcase name="ComparatorEquivalentKeysShareOneReferenceCount" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="178" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.879" classname="MetadataDeltaTest" />
+    <testcase name="RejectsBadDeltaBeforeChangingAnyState" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="193" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:40.879" classname="MetadataDeltaTest" />
+  </testsuite>
+  <testsuite name="MetadataWriteTest" tests="10" failures="0" disabled="0" skipped="0" errors="0" time="0.392" timestamp="2026-11-03T11:36:40.880">
+    <testcase name="EmptyOverwriteDeleteAndSnapshotIgnored" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="254" status="run" result="completed" time="0.033" timestamp="2026-11-03T11:36:40.880" classname="MetadataWriteTest" />
+    <testcase name="MixedBatchEmptyBatchAndNullBatch" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="273" status="run" result="completed" time="0.033" timestamp="2026-11-03T11:36:40.914" classname="MetadataWriteTest" />
+    <testcase name="TTLExpiryDoesNotChangeCountsAndOverflowDoesNotPublish" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="289" status="run" result="completed" time="0.033" timestamp="2026-11-03T11:36:40.948" classname="MetadataWriteTest" />
+    <testcase name="ComparatorEquivalentAndBinaryKeys" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="309" status="run" result="completed" time="0.067" timestamp="2026-11-03T11:36:40.982" classname="MetadataWriteTest" />
+    <testcase name="FlushAndCrossSourceDuplicatesDoNotDoubleCount" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="323" status="run" result="completed" time="0.047" timestamp="2026-11-03T11:36:41.051" classname="MetadataWriteTest" />
+    <testcase name="MalformedBatchDoesNotWriteOrPublishAndNextWriteWorks" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="333" status="run" result="completed" time="0.032" timestamp="2026-11-03T11:36:41.099" classname="MetadataWriteTest" />
+    <testcase name="WALAppendFailureDoesNotPublishAndDisablesLaterWrites" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="349" status="run" result="completed" time="0.03" timestamp="2026-11-03T11:36:41.133" classname="MetadataWriteTest" />
+    <testcase name="WALSyncFailureDoesNotPublishAndDisablesLaterWrites" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="360" status="run" result="completed" time="0.031" timestamp="2026-11-03T11:36:41.163" classname="MetadataWriteTest" />
+    <testcase name="QueryDuringBlockedWALSeesPreviousWholeBatch" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="373" status="run" result="completed" time="0.032" timestamp="2026-11-03T11:36:41.196" classname="MetadataWriteTest" />
+    <testcase name="ConcurrentBatchesAndQueriesNeverExposePartialCounts" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="389" status="run" result="completed" time="0.042" timestamp="2026-11-03T11:36:41.229" classname="MetadataWriteTest" />
+  </testsuite>
+  <testsuite name="SourceMetadataTest" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-03T11:36:41.273">
+    <testcase name="SortedBuilderCountsRecordsAndAdjacentDistinctKeys" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="431" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:41.273" classname="SourceMetadataTest" />
+    <testcase name="MemTableCountsArbitraryOrderAndComparatorEquivalence" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="444" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:41.273" classname="SourceMetadataTest" />
+  </testsuite>
+  <testsuite name="MetadataFileTest" tests="6" failures="0" disabled="0" skipped="0" errors="0" time="0.54" timestamp="2026-11-03T11:36:41.274">
+    <testcase name="FlushPersistsExactSummaryWithoutChangingGlobalCounts" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="515" status="run" result="completed" time="0.05" timestamp="2026-11-03T11:36:41.274" classname="MetadataFileTest" />
+    <testcase name="ManifestRewritesKeepFileMetadataAcrossRepeatedReopen" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="528" status="run" result="completed" time="0.103" timestamp="2026-11-03T11:36:41.326" classname="MetadataFileTest" />
+    <testcase name="WALRecoveryBuildsSSTWithKnownMetadata" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="550" status="run" result="completed" time="0.078" timestamp="2026-11-03T11:36:41.431" classname="MetadataFileTest" />
+    <testcase name="CompactionRecomputesEachSplitOutputSummary" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="566" status="run" result="completed" time="0.134" timestamp="2026-11-03T11:36:41.510" classname="MetadataFileTest" />
+    <testcase name="RepairRebuildsAndPersistsFileMetadata" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="591" status="run" result="completed" time="0.054" timestamp="2026-11-03T11:36:41.645" classname="MetadataFileTest" />
+    <testcase name="LegacyUnknownIsUpgradedOnceForGlobalRecovery" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="604" status="run" result="completed" time="0.114" timestamp="2026-11-03T11:36:41.700" classname="MetadataFileTest" />
+  </testsuite>
+  <testsuite name="MetadataRecoveryTest" tests="11" failures="0" disabled="0" skipped="0" errors="0" time="1.238" timestamp="2026-11-03T11:36:41.815">
+    <testcase name="EmptyAndMixedWALRecoverExactCountsWithBothLogModes" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="662" status="run" result="completed" time="0.072" timestamp="2026-11-03T11:36:41.815" classname="MetadataRecoveryTest" />
+    <testcase name="SSTSummaryRestoresGlobalMapWithoutOpeningSST" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="676" status="run" result="completed" time="0.068" timestamp="2026-11-03T11:36:41.889" classname="MetadataRecoveryTest" />
+    <testcase name="CrossSSTAndReusedMemTableDeduplicateWithoutWALCopies" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="691" status="run" result="completed" time="0.048" timestamp="2026-11-03T11:36:41.958" classname="MetadataRecoveryTest" />
+    <testcase name="RecoveredComparatorEquivalentReferencesDeduplicate" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="709" status="run" result="completed" time="0.16" timestamp="2026-11-03T11:36:42.008" classname="MetadataRecoveryTest" />
+    <testcase name="CompactionReclaimsExactVersionsAndSurvivesReopen" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="730" status="run" result="completed" time="0.142" timestamp="2026-11-03T11:36:42.170" classname="MetadataRecoveryTest" />
+    <testcase name="TTLLastLevelGCProtectsSnapshotAndPinnedIterator" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="748" status="run" result="completed" time="0.169" timestamp="2026-11-03T11:36:42.314" classname="MetadataRecoveryTest" />
+    <testcase name="FailedCompactionInstallDoesNotSubtractItsDelta" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="778" status="run" result="completed" time="0.055" timestamp="2026-11-03T11:36:42.486" classname="MetadataRecoveryTest" />
+    <testcase name="QueryDuringCompactionManifestWriteSeesOldWholeState" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="790" status="run" result="completed" time="0.071" timestamp="2026-11-03T11:36:42.542" classname="MetadataRecoveryTest" />
+    <testcase name="ConcurrentWritersQueriesAndCompactionAgreeAtEnd" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="805" status="run" result="completed" time="0.196" timestamp="2026-11-03T11:36:42.615" classname="MetadataRecoveryTest" />
+    <testcase name="InvalidPersistedReferenceOrderMakesOpenFail" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="855" status="run" result="completed" time="0.092" timestamp="2026-11-03T11:36:42.817" classname="MetadataRecoveryTest" />
+    <testcase name="SyncedWritesSurviveExitWithoutDBDestruction" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/metadata_stats_test.cc" line="891" status="run" result="completed" time="0.142" timestamp="2026-11-03T11:36:42.910" classname="MetadataRecoveryTest" />
+  </testsuite>
+  <testsuite name="RecoveryTest" tests="7" failures="0" disabled="0" skipped="0" errors="0" time="0.231" timestamp="2026-11-03T11:36:43.054">
+    <testcase name="ManifestReused" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/recovery_test.cc" line="161" status="run" result="completed" time="0.024" timestamp="2026-11-03T11:36:43.054" classname="RecoveryTest" />
+    <testcase name="LargeManifestCompacted" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/recovery_test.cc" line="178" status="run" result="completed" time="0.038" timestamp="2026-11-03T11:36:43.080" classname="RecoveryTest" />
+    <testcase name="NoLogFiles" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/recovery_test.cc" line="210" status="run" result="completed" time="0.018" timestamp="2026-11-03T11:36:43.119" classname="RecoveryTest" />
+    <testcase name="LogFileReuse" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/recovery_test.cc" line="219" status="run" result="completed" time="0.034" timestamp="2026-11-03T11:36:43.138" classname="RecoveryTest" />
+    <testcase name="MultipleMemTables" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/recovery_test.cc" line="250" status="run" result="completed" time="0.047" timestamp="2026-11-03T11:36:43.173" classname="RecoveryTest" />
+    <testcase name="MultipleLogFiles" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/recovery_test.cc" line="279" status="run" result="completed" time="0.046" timestamp="2026-11-03T11:36:43.221" classname="RecoveryTest" />
+    <testcase name="ManifestMissing" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/recovery_test.cc" line="325" status="run" result="completed" time="0.017" timestamp="2026-11-03T11:36:43.268" classname="RecoveryTest" />
+  </testsuite>
+  <testsuite name="SkipTest" tests="8" failures="0" disabled="0" skipped="0" errors="0" time="0.745" timestamp="2026-11-03T11:36:43.286">
+    <testcase name="Empty" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/skiplist_test.cc" line="35" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:43.286" classname="SkipTest" />
+    <testcase name="InsertAndLookup" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/skiplist_test.cc" line="51" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:43.287" classname="SkipTest" />
+    <testcase name="ConcurrentWithoutThreads" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/skiplist_test.cc" line="289" status="run" result="completed" time="0.003" timestamp="2026-11-03T11:36:43.288" classname="SkipTest" />
+    <testcase name="Concurrent1" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/skiplist_test.cc" line="362" status="run" result="completed" time="0.148" timestamp="2026-11-03T11:36:43.292" classname="SkipTest" />
+    <testcase name="Concurrent2" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/skiplist_test.cc" line="363" status="run" result="completed" time="0.143" timestamp="2026-11-03T11:36:43.441" classname="SkipTest" />
+    <testcase name="Concurrent3" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/skiplist_test.cc" line="364" status="run" result="completed" time="0.146" timestamp="2026-11-03T11:36:43.586" classname="SkipTest" />
+    <testcase name="Concurrent4" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/skiplist_test.cc" line="365" status="run" result="completed" time="0.152" timestamp="2026-11-03T11:36:43.733" classname="SkipTest" />
+    <testcase name="Concurrent5" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/skiplist_test.cc" line="366" status="run" result="completed" time="0.144" timestamp="2026-11-03T11:36:43.886" classname="SkipTest" />
+  </testsuite>
+  <testsuite name="TTLInternalTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="0.001" timestamp="2026-11-03T11:36:44.032">
+    <testcase name="ComputesAbsoluteExpiration" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="29" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:44.032" classname="TTLInternalTest" />
+    <testcase name="RejectsExpirationOverflow" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="40" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:44.032" classname="TTLInternalTest" />
+    <testcase name="EncodesExpirationAndBinaryValue" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="51" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:44.033" classname="TTLInternalTest" />
+  </testsuite>
+  <testsuite name="TTLWriteBatchTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="0.001" timestamp="2026-11-03T11:36:44.033">
+    <testcase name="RoundTripAndLegacyHandler" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="147" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:44.033" classname="TTLWriteBatchTest" />
+    <testcase name="RejectsMalformedRecords" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="168" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:44.034" classname="TTLWriteBatchTest" />
+    <testcase name="MixedBatchPreservesTypesAndSequences" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="191" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:44.034" classname="TTLWriteBatchTest" />
+  </testsuite>
+  <testsuite name="TTLWriteRecoveryTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="0.083" timestamp="2026-11-03T11:36:44.034">
+    <testcase name="ZeroTTLAndOverflowHaveCorrectWriteEffects" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="294" status="run" result="completed" time="0.027" timestamp="2026-11-03T11:36:44.035" classname="TTLWriteRecoveryTest" />
+    <testcase name="WALReplayPreservesDeadlineEvenAfterExpiry" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="316" status="run" result="completed" time="0.025" timestamp="2026-11-03T11:36:44.062" classname="TTLWriteRecoveryTest" />
+    <testcase name="FlushAndReopenPreserveDeadline" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="334" status="run" result="completed" time="0.029" timestamp="2026-11-03T11:36:44.088" classname="TTLWriteRecoveryTest" />
+  </testsuite>
+  <testsuite name="TTLReadMemTableTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-03T11:36:44.118">
+    <testcase name="HitMissExpiryAndCorruptionAreDistinct" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="344" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:44.119" classname="TTLReadMemTableTest" />
+  </testsuite>
+  <testsuite name="TTLReadTest" tests="9" failures="0" disabled="0" skipped="0" errors="0" time="0.289" timestamp="2026-11-03T11:36:44.119">
+    <testcase name="MemTableDeadlineBoundaryAndPlainBinaryValues" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="393" status="run" result="completed" time="0.017" timestamp="2026-11-03T11:36:44.119" classname="TTLReadTest" />
+    <testcase name="SSTDeadlineBoundaryAndRepeatedCacheReads" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="415" status="run" result="completed" time="0.029" timestamp="2026-11-03T11:36:44.137" classname="TTLReadTest" />
+    <testcase name="ExpiredMemTableVersionHidesOldSSTValue" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="429" status="run" result="completed" time="0.03" timestamp="2026-11-03T11:36:44.167" classname="TTLReadTest" />
+    <testcase name="ImmutableMemTableUsesSameTTLAndSnapshotRules" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="442" status="run" result="completed" time="0.049" timestamp="2026-11-03T11:36:44.198" classname="TTLReadTest" />
+    <testcase name="ExpiredSSTVersionHidesOlderSSTValue" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="458" status="run" result="completed" time="0.041" timestamp="2026-11-03T11:36:44.248" classname="TTLReadTest" />
+    <testcase name="SnapshotFixesBothSequenceAndTimeAcrossFlush" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="471" status="run" result="completed" time="0.032" timestamp="2026-11-03T11:36:44.290" classname="TTLReadTest" />
+    <testcase name="OrdinaryGetSamplesClockOnceAndSnapshotGetNeverSamplesIt" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="494" status="run" result="completed" time="0.033" timestamp="2026-11-03T11:36:44.324" classname="TTLReadTest" />
+    <testcase name="WALReopenUsesOriginalDeadlineForGet" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="508" status="run" result="completed" time="0.02" timestamp="2026-11-03T11:36:44.358" classname="TTLReadTest" />
+    <testcase name="SSTReopenUsesOriginalDeadlineForGet" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="523" status="run" result="completed" time="0.028" timestamp="2026-11-03T11:36:44.380" classname="TTLReadTest" />
+  </testsuite>
+  <testsuite name="TTLIteratorTest" tests="9" failures="0" disabled="0" skipped="0" errors="0" time="0.616" timestamp="2026-11-03T11:36:44.410">
+    <testcase name="MemTableSeekTraversalAndDirectionChanges" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="621" status="run" result="completed" time="0.016" timestamp="2026-11-03T11:36:44.410" classname="TTLIteratorTest" />
+    <testcase name="SSTAndReopenHaveSameView" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="636" status="run" result="completed" time="0.031" timestamp="2026-11-03T11:36:44.427" classname="TTLIteratorTest" />
+    <testcase name="ExpiredImmutableVersionHidesOldSSTInBothDirections" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="649" status="run" result="completed" time="0.05" timestamp="2026-11-03T11:36:44.459" classname="TTLIteratorTest" />
+    <testcase name="ImplicitViewIsFixedBeforeFirstSeekAndAcrossCompaction" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="673" status="run" result="completed" time="0.071" timestamp="2026-11-03T11:36:44.510" classname="TTLIteratorTest" />
+    <testcase name="SnapshotUsesCreationTimeAndSequenceNotIteratorTime" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="691" status="run" result="completed" time="0.03" timestamp="2026-11-03T11:36:44.582" classname="TTLIteratorTest" />
+    <testcase name="EmptyAndAllExpiredAreNormalEndNotErrors" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="713" status="run" result="completed" time="0.017" timestamp="2026-11-03T11:36:44.613" classname="TTLIteratorTest" />
+    <testcase name="TimeIsSampledOnlyAtCreation" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="727" status="run" result="completed" time="0.018" timestamp="2026-11-03T11:36:44.632" classname="TTLIteratorTest" />
+    <testcase name="CorruptTTLStopsBothDirectionsAndErrorRemainsSticky" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="745" status="run" result="completed" time="0.018" timestamp="2026-11-03T11:36:44.651" classname="TTLIteratorTest" />
+    <testcase name="RandomizedViewsMatchIndependentLatestVersionModel" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/ttl_internal_test.cc" line="775" status="run" result="completed" time="0.355" timestamp="2026-11-03T11:36:44.671" classname="TTLIteratorTest" />
+  </testsuite>
+  <testsuite name="VersionEditTest" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="0.001" timestamp="2026-11-03T11:36:45.027">
+    <testcase name="EncodeDecode" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/version_edit_test.cc" line="21" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.027" classname="VersionEditTest" />
+    <testcase name="FileMetadataRoundTripAndMixedLegacyRecords" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/version_edit_test.cc" line="41" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.027" classname="VersionEditTest" />
+    <testcase name="KnownZeroMetadataIsDifferentFromLegacyUnknown" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/version_edit_test.cc" line="59" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.028" classname="VersionEditTest" />
+    <testcase name="RejectsTruncatedAndInconsistentFileMetadata" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/version_edit_test.cc" line="74" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.028" classname="VersionEditTest" />
+    <testcase name="PersistentKeyReferencesRoundTripAndRejectInvalidCounts" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/version_edit_test.cc" line="93" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.029" classname="VersionEditTest" />
+  </testsuite>
+  <testsuite name="FindFileTest" tests="6" failures="0" disabled="0" skipped="0" errors="0" time="0.002" timestamp="2026-11-03T11:36:45.029">
+    <testcase name="Empty" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/version_set_test.cc" line="54" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.029" classname="FindFileTest" />
+    <testcase name="Single" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/version_set_test.cc" line="62" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.030" classname="FindFileTest" />
+    <testcase name="Multiple" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/version_set_test.cc" line="92" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.030" classname="FindFileTest" />
+    <testcase name="MultipleNullBoundaries" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/version_set_test.cc" line="130" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.031" classname="FindFileTest" />
+    <testcase name="OverlapSequenceChecks" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/version_set_test.cc" line="150" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.031" classname="FindFileTest" />
+    <testcase name="OverlappingFiles" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/version_set_test.cc" line="159" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.032" classname="FindFileTest" />
+  </testsuite>
+  <testsuite name="AddBoundaryInputsTest" tests="7" failures="0" disabled="0" skipped="0" errors="0" time="0.002" timestamp="2026-11-03T11:36:45.032">
+    <testcase name="TestEmptyFileSets" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/version_set_test.cc" line="208" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.032" classname="AddBoundaryInputsTest" />
+    <testcase name="TestEmptyLevelFiles" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/version_set_test.cc" line="214" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.033" classname="AddBoundaryInputsTest" />
+    <testcase name="TestEmptyCompactionFiles" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/version_set_test.cc" line="226" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.033" classname="AddBoundaryInputsTest" />
+    <testcase name="TestNoBoundaryFiles" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/version_set_test.cc" line="238" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.033" classname="AddBoundaryInputsTest" />
+    <testcase name="TestOneBoundaryFiles" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/version_set_test.cc" line="259" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.034" classname="AddBoundaryInputsTest" />
+    <testcase name="TestTwoBoundaryFiles" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/version_set_test.cc" line="281" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.034" classname="AddBoundaryInputsTest" />
+    <testcase name="TestDisjoinFilePointers" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/version_set_test.cc" line="304" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.034" classname="AddBoundaryInputsTest" />
+  </testsuite>
+  <testsuite name="WriteBatchTest" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="0.002" timestamp="2026-11-03T11:36:45.035">
+    <testcase name="Empty" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/write_batch_test.cc" line="54" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.036" classname="WriteBatchTest" />
+    <testcase name="Multiple" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/write_batch_test.cc" line="60" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.036" classname="WriteBatchTest" />
+    <testcase name="Corruption" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/write_batch_test.cc" line="75" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.037" classname="WriteBatchTest" />
+    <testcase name="Append" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/write_batch_test.cc" line="89" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.037" classname="WriteBatchTest" />
+    <testcase name="ApproximateSize" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/db/write_batch_test.cc" line="115" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.038" classname="WriteBatchTest" />
+  </testsuite>
+  <testsuite name="MemEnvTest" tests="7" failures="0" disabled="0" skipped="0" errors="0" time="0.004" timestamp="2026-11-03T11:36:45.038">
+    <testcase name="Basics" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/helpers/memenv/memenv_test.cc" line="26" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.039" classname="MemEnvTest" />
+    <testcase name="ReadWrite" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/helpers/memenv/memenv_test.cc" line="94" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.039" classname="MemEnvTest" />
+    <testcase name="Locks" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/helpers/memenv/memenv_test.cc" line="137" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.039" classname="MemEnvTest" />
+    <testcase name="Misc" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/helpers/memenv/memenv_test.cc" line="145" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.040" classname="MemEnvTest" />
+    <testcase name="LargeWrite" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/helpers/memenv/memenv_test.cc" line="160" status="run" result="completed" time="0.001" timestamp="2026-11-03T11:36:45.040" classname="MemEnvTest" />
+    <testcase name="OverwriteOpenFile" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/helpers/memenv/memenv_test.cc" line="193" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.042" classname="MemEnvTest" />
+    <testcase name="DBTest" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/helpers/memenv/memenv_test.cc" line="216" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.042" classname="MemEnvTest" />
+  </testsuite>
+  <testsuite name="FilterBlockTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="0.001" timestamp="2026-11-03T11:36:45.044">
+    <testcase name="EmptyBuilder" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/filter_block_test.cc" line="44" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.044" classname="FilterBlockTest" />
+    <testcase name="SingleChunk" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/filter_block_test.cc" line="53" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.045" classname="FilterBlockTest" />
+    <testcase name="MultiChunk" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/filter_block_test.cc" line="74" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.045" classname="FilterBlockTest" />
+  </testsuite>
+  <testsuite name="Harness" tests="8" failures="0" disabled="0" skipped="0" errors="0" time="5.449" timestamp="2026-11-03T11:36:45.045">
+    <testcase name="Empty" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/table_test.cc" line="613" status="run" result="completed" time="0.134" timestamp="2026-11-03T11:36:45.045" classname="Harness" />
+    <testcase name="ZeroRestartPointsInBlock" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/table_test.cc" line="624" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:45.181" classname="Harness" />
+    <testcase name="SimpleEmptyKey" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/table_test.cc" line="643" status="run" result="completed" time="0.138" timestamp="2026-11-03T11:36:45.181" classname="Harness" />
+    <testcase name="SimpleSingle" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/table_test.cc" line="652" status="run" result="completed" time="0.129" timestamp="2026-11-03T11:36:45.321" classname="Harness" />
+    <testcase name="SimpleMulti" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/table_test.cc" line="661" status="run" result="completed" time="0.144" timestamp="2026-11-03T11:36:45.451" classname="Harness" />
+    <testcase name="SimpleSpecialKey" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/table_test.cc" line="672" status="run" result="completed" time="0.142" timestamp="2026-11-03T11:36:45.596" classname="Harness" />
+    <testcase name="Randomized" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/table_test.cc" line="681" status="run" result="completed" time="4.349" timestamp="2026-11-03T11:36:45.739" classname="Harness" />
+    <testcase name="RandomizedLongDB" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/table_test.cc" line="701" status="run" result="completed" time="0.405" timestamp="2026-11-03T11:36:50.089" classname="Harness" />
+  </testsuite>
+  <testsuite name="MemTableTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0.001" timestamp="2026-11-03T11:36:50.495">
+    <testcase name="Simple" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/table_test.cc" line="725" status="run" result="completed" time="0.001" timestamp="2026-11-03T11:36:50.495" classname="MemTableTest" />
+  </testsuite>
+  <testsuite name="TableTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-03T11:36:50.497">
+    <testcase name="ApproximateOffsetOfPlain" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/table_test.cc" line="759" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.497" classname="TableTest" />
+  </testsuite>
+  <testsuite name="ArenaTest" tests="2" failures="0" disabled="0" skipped="0" errors="0" time="0.005" timestamp="2026-11-03T11:36:50.498">
+    <testcase name="Empty" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/arena_test.cc" line="12" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.498" classname="ArenaTest" />
+    <testcase name="Simple" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/arena_test.cc" line="14" status="run" result="completed" time="0.004" timestamp="2026-11-03T11:36:50.499" classname="ArenaTest" />
+  </testsuite>
+  <testsuite name="BloomTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="0.018" timestamp="2026-11-03T11:36:50.504">
+    <testcase name="EmptyFilter" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/bloom_test.cc" line="82" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.505" classname="BloomTest" />
+    <testcase name="Small" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/bloom_test.cc" line="87" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.505" classname="BloomTest" />
+    <testcase name="VaryingLengths" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/bloom_test.cc" line="109" status="run" result="completed" time="0.016" timestamp="2026-11-03T11:36:50.505" classname="BloomTest" />
+  </testsuite>
+  <testsuite name="CacheTest" tests="9" failures="0" disabled="0" skipped="0" errors="0" time="0.003" timestamp="2026-11-03T11:36:50.523">
+    <testcase name="HitAndMiss" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/cache_test.cc" line="67" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.523" classname="CacheTest" />
+    <testcase name="Erase" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/cache_test.cc" line="90" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.523" classname="CacheTest" />
+    <testcase name="EntriesArePinned" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/cache_test.cc" line="109" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.524" classname="CacheTest" />
+    <testcase name="EvictionPolicy" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/cache_test.cc" line="134" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.524" classname="CacheTest" />
+    <testcase name="UseExceedsCacheSize" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/cache_test.cc" line="153" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.524" classname="CacheTest" />
+    <testcase name="HeavyEntries" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/cache_test.cc" line="170" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.525" classname="CacheTest" />
+    <testcase name="NewId" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/cache_test.cc" line="197" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.525" classname="CacheTest" />
+    <testcase name="Prune" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/cache_test.cc" line="203" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.526" classname="CacheTest" />
+    <testcase name="ZeroSizeCache" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/cache_test.cc" line="216" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.526" classname="CacheTest" />
+  </testsuite>
+  <testsuite name="Coding" tests="10" failures="0" disabled="0" skipped="0" errors="0" time="0.003" timestamp="2026-11-03T11:36:50.526">
+    <testcase name="Fixed32" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/coding_test.cc" line="13" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.527" classname="Coding" />
+    <testcase name="Fixed64" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/coding_test.cc" line="27" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.528" classname="Coding" />
+    <testcase name="EncodingOutput" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/coding_test.cc" line="55" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.528" classname="Coding" />
+    <testcase name="Varint32" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/coding_test.cc" line="77" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.528" classname="Coding" />
+    <testcase name="Varint64" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/coding_test.cc" line="98" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.528" classname="Coding" />
+    <testcase name="Varint32Overflow" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/coding_test.cc" line="133" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.529" classname="Coding" />
+    <testcase name="Varint32Truncation" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/coding_test.cc" line="140" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.529" classname="Coding" />
+    <testcase name="Varint64Overflow" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/coding_test.cc" line="153" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.529" classname="Coding" />
+    <testcase name="Varint64Truncation" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/coding_test.cc" line="160" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.529" classname="Coding" />
+    <testcase name="Strings" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/coding_test.cc" line="173" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.530" classname="Coding" />
+  </testsuite>
+  <testsuite name="CRC" tests="4" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-03T11:36:50.530">
+    <testcase name="StandardResults" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/crc32c_test.cc" line="12" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.530" classname="CRC" />
+    <testcase name="Values" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/crc32c_test.cc" line="41" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.531" classname="CRC" />
+    <testcase name="Extend" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/crc32c_test.cc" line="43" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.531" classname="CRC" />
+    <testcase name="Mask" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/crc32c_test.cc" line="47" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.531" classname="CRC" />
+  </testsuite>
+  <testsuite name="HASH" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2026-11-03T11:36:50.531">
+    <testcase name="SignedUnsignedIssue" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/hash_test.cc" line="11" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.531" classname="HASH" />
+  </testsuite>
+  <testsuite name="Logging" tests="5" failures="0" disabled="0" skipped="0" errors="0" time="0.001" timestamp="2026-11-03T11:36:50.532">
+    <testcase name="NumberToString" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/logging_test.cc" line="15" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.532" classname="Logging" />
+    <testcase name="ConsumeDecimalNumberRoundtrip" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/logging_test.cc" line="53" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.533" classname="Logging" />
+    <testcase name="ConsumeDecimalNumberRoundtripWithPadding" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/logging_test.cc" line="75" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.533" classname="Logging" />
+    <testcase name="ConsumeDecimalNumberOverflow" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/logging_test.cc" line="100" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.533" classname="Logging" />
+    <testcase name="ConsumeDecimalNumberNoDigits" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/util/logging_test.cc" line="129" status="run" result="completed" time="0." timestamp="2026-11-03T11:36:50.534" classname="Logging" />
+  </testsuite>
+  <testsuite name="CompressionTests/CompressionTableTest" tests="2" failures="0" disabled="0" skipped="2" errors="0" time="0." timestamp="2026-11-03T11:36:50.534">
+    <testcase name="ApproximateOffsetOfCompressed/0" value_param="(1)" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/table_test.cc" line="806" status="run" result="skipped" time="0." timestamp="2026-11-03T11:36:50.534" classname="CompressionTests/CompressionTableTest">
+      <skipped message="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/table_test.cc:809&#x0A;skipping compression test: 1&#x0A;"><![CDATA[/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/table_test.cc:809
+skipping compression test: 1
+]]></skipped>
+    </testcase>
+    <testcase name="ApproximateOffsetOfCompressed/1" value_param="(2)" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/table_test.cc" line="806" status="run" result="skipped" time="0." timestamp="2026-11-03T11:36:50.534" classname="CompressionTests/CompressionTableTest">
+      <skipped message="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/table_test.cc:809&#x0A;skipping compression test: 2&#x0A;"><![CDATA[/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/table/table_test.cc:809
+skipping compression test: 2
+]]></skipped>
+    </testcase>
+  </testsuite>
+</testsuites>

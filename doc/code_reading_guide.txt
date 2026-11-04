@@ -1,0 +1,69 @@
+朱昭荣：先理解metadata，再理解它与TTL的交接。
+这份路线对应实验报告中的分工，不代表逐文件的个人作者认定。
+
+第一步：把计数规则算明白
+先看作业要求PDF第3—5页，再看leveldb/test/metadata_test.cc的BasicCount。
+依次写k1、k2、k1，尚未发生回收时，total_entries=3，distinct_keys=2，seq=3。
+原base的BasicCount只检查前两个数；补充测试进一步检查序列号和其他边界。
+Delete也新增一个删除标记，所以不应直接把total_entries减一。
+TTL到期只改变能否读取；实际回收成功后，统计才减少。
+对应现有PPT：第3页。
+
+第二步：认识“长期账本”和“一次变更”
+看leveldb/db/metadata_stats.h的MetadataDelta、MetadataState、SourceMetadata。
+再看metadata_stats.cc的AddRecord、RemoveRecord、Apply、Snapshot。
+MetadataState保存全局记录数与“用户键→内部记录引用数”。
+MetadataDelta暂存一次写入/回收对账本的增减；完成存储操作后再一次性应用。
+引用数归零才移除键，distinct_keys就是全局引用map的大小。
+map使用数据库配置的Comparator，保证“同一个键”的判断与数据库一致。
+Snapshot在这里是复制统计字段的函数名，不能和用户读取Snapshot对象混淆。
+对应现有PPT：第13、15页。
+
+第三步：跟一次写入走完整条路径
+只定位leveldb/db/db_impl.cc的DBImpl::Write和GetCurrentStats，不必先通读整个文件。
+Write：合并完整batch → 收集delta → 写WAL → 插入MemTable → 锁内发布delta和seq。
+GetCurrentStats使用同一把锁读取三个字段，查询看不到半个batch或混合的seq。
+统计查询的复制操作O(1)，但可能等待锁；map增量更新不是O(1)。
+对应现有PPT：第14—16页。
+
+第四步：理解刷盘与跨文件去重
+看leveldb/db/builder.cc的BuildTable，以及db/version_edit.h的FileMetaData。
+刷盘把同一批记录从内存移到SST，全局记录数不能再加一次。
+每个SST保存局部计数和逐键引用摘要，通过VersionEdit写入MANIFEST。
+SST A有{a,b}，SST B有{a,c}，各自distinct=2，全局distinct却是3。
+所以每个文件只存total、distinct两个整数不够；必须保留足够的跨文件去重信息。
+当前实现选择逐键引用摘要，代价是更多内存和更大的MANIFEST。
+对应现有PPT：第17—19页；实验报告最后一页的问题分析。
+
+第五步：理解数据库重开
+看leveldb/db/db_impl.cc的RebuildMetadata，再看doc/metadata_recovery_zh.md。
+先恢复MANIFEST和WAL，再合并当前有效SST的逐键摘要，并扫描最终存活的mem/imm。
+WAL里的操作已经进入MemTable或SST，不能再把WAL当成额外数据源加一遍。
+新格式正常重开不扫描SST数据区，但仍需要解析摘要；旧格式首次打开需要扫描升级。
+所以可以说“避免正常重开扫描新格式SST数据”，不能说“启动O(1)”或“永不扫描”。
+对应现有PPT：第23页。
+
+第六步：理解回收时为什么要等成功安装
+看db_impl.cc的DoCompactionWork和InstallCompactionResults。
+Compaction丢弃一条实际内部记录时，先在局部delta中记录负增量。
+新的文件集合通过LogAndApply成功安装之后，才在锁内扣全局账本。
+安装失败不扣数；Compaction不新增用户写入，因此不推进seq。
+TTL回收还要保护读取视图，防止删掉过期的新版本后，让更深层旧值重新出现。
+对应现有PPT：第21—22页。
+
+遇到困难时的辅助文档
+doc/metadata_stage4_walkthrough_zh.md：写入统计与发布点。
+doc/metadata_stage5_walkthrough_zh.md：文件摘要与持久化。
+doc/metadata_recovery_zh.md：最终的恢复和回收实现。
+较早阶段文档保留了开发过程，当前状态以最终恢复文档和源码为准。
+
+理解自查：用自己的话回答下面六个问题
+1. 为什么删除一个键，记录数可能增加？因为新增了删除标记，旧记录还没被回收。
+2. 为什么Flush不加全局统计？因为是同一批记录迁移，不是新记录。
+3. 为什么时间到了不减数？逻辑过期不等于实际回收。
+4. 为什么不能直接把各SST的distinct相加？同一个用户键会跨文件重复。
+5. 为什么WAL恢复后不再额外统计WAL？避免重复计入日志副本。
+6. 为什么要在存储成功后统一发布？保证读到的计数、seq和当前文件集合一致。
+
+建议先读完前三步并手算例子，再读持久化、恢复与回收，最后整理自己的讲稿。
+当前源码的本地复现状态和命令见reproduction_20261103/summary.json及reproduce_local.py。

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="3" failures="0" disabled="0" errors="0" time="0.165" timestamp="2026-11-03T11:34:08.638" name="AllTests">
+  <testsuite name="StatsDBTest" tests="3" failures="0" disabled="0" skipped="0" errors="0" time="0.163" timestamp="2026-11-03T11:34:08.639">
+    <testcase name="BasicCount" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/test/metadata_test.cc" line="45" status="run" result="completed" time="0.037" timestamp="2026-11-03T11:34:08.639" classname="StatsDBTest" />
+    <testcase name="PersistAndRecover" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/test/metadata_test.cc" line="58" status="run" result="completed" time="0.057" timestamp="2026-11-03T11:34:08.677" classname="StatsDBTest" />
+    <testcase name="CompactionUpdate" file="/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/test/metadata_test.cc" line="81" status="run" result="completed" time="0.066" timestamp="2026-11-03T11:34:08.735" classname="StatsDBTest" />
+  </testsuite>
+</testsuites>

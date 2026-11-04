@@ -1,0 +1,705 @@
+{
+  "status": "pass",
+  "source": "/mnt/d/zzr/大四课程/数据库plus/project1/leveldb",
+  "output": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103",
+  "build": "/tmp/leveldb-repro-7px_6ah_",
+  "build_method": "direct GCC; CMake unavailable",
+  "flags": [
+    "-O3",
+    "-DNDEBUG",
+    "-pthread",
+    "-DLEVELDB_PLATFORM_POSIX=1",
+    "-DLEVELDB_HAS_PORT_CONFIG_H=1",
+    "-DLEVELDB_COMPILE_LIBRARY",
+    "-I/mnt/d/zzr/大四课程/数据库plus/project1/leveldb",
+    "-I/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/include",
+    "-I/tmp/leveldb-repro-7px_6ah_/include",
+    "-I/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/third_party/googletest/googletest",
+    "-I/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/third_party/googletest/googletest/include",
+    "-I/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/third_party/googletest/googlemock",
+    "-I/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/third_party/googletest/googlemock/include",
+    "-I/mnt/d/zzr/大四课程/数据库plus/project1/leveldb/benchmark"
+  ],
+  "optional_libraries": {
+    "HAVE_FDATASYNC": 1,
+    "HAVE_FULLFSYNC": 0,
+    "HAVE_O_CLOEXEC": 1,
+    "HAVE_CRC32C": 0,
+    "HAVE_SNAPPY": 0,
+    "HAVE_ZSTD": 0
+  },
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "compiler": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0",
+  "records": [
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.924268742033746,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/combined_concurrent-n10000-t4-e50-r1/run.log",
+      "case": "combined_concurrent",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 22640,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.07055597600992769,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/combined_contract-n10000-t4-e50-r1/run.log",
+      "case": "combined_contract",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21460,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.21916578704258427,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/combined_gc-n10000-t4-e50-r1/run.log",
+      "case": "combined_gc",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21460,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.1697218440240249,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/combined_overwrites-n10000-t4-e50-r1/run.log",
+      "case": "combined_overwrites",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21460,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.470645786030218,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/combined_reopen-n10000-t4-e50-r1/run.log",
+      "case": "combined_reopen",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21460,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.2200087090022862,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/combined_views-n10000-t4-e50-r1/run.log",
+      "case": "combined_views",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21460,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.0684918100014329,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/metadata_contract-n10000-t4-e50-r1/run.log",
+      "case": "metadata_contract",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21460,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.36931458802428097,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/metadata_reopen-n10000-t4-e50-r1/run.log",
+      "case": "metadata_reopen",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21460,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.7703377570142038,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/perf_combined_gc-n10000-t4-e50-r1/run.log",
+      "case": "perf_combined_gc",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21460,
+      "metrics": [
+        {
+          "phase": "ttl_gc_with_statistics",
+          "ops": 10000,
+          "seconds": 0.0637559,
+          "ops_per_second": 156848,
+          "p50_us": 63754.8,
+          "p95_us": 63754.8,
+          "p99_us": 63754.8,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 1497045,
+          "db_directory_bytes_after_drain": 2422650
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.874159257975407,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/perf_combined_stats_under_write-n10000-t4-e50-r1/run.log",
+      "case": "perf_combined_stats_under_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21460,
+      "metrics": [
+        {
+          "phase": "ttl_put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.234451,
+          "ops_per_second": 42652.8,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 7926661,
+          "db_directory_bytes_after_drain": 6227342
+        },
+        {
+          "phase": "ttl_put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.233523,
+          "ops_per_second": 42822.4,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 8024840,
+          "db_directory_bytes_after_drain": 6227498
+        },
+        {
+          "phase": "stats_under_ttl_write",
+          "ops": 4087054,
+          "seconds": 0.233415,
+          "ops_per_second": 17509800.0,
+          "p50_us": 0.029,
+          "p95_us": 0.035,
+          "p99_us": 0.044,
+          "latency_samples": 63861,
+          "append_bytes_during_phase": 9537327,
+          "db_directory_bytes_after_drain": 6227498
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.37036070798058063,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/perf_concurrent-n10000-t4-e50-r1/run.log",
+      "case": "perf_concurrent",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21460,
+      "metrics": [
+        {
+          "phase": "parallel_put",
+          "ops": 10000,
+          "seconds": 0.217521,
+          "ops_per_second": 45972.5,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 7789660,
+          "db_directory_bytes_after_drain": 3148505
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.26925307902274653,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/perf_read-n10000-t4-e50-r1/run.log",
+      "case": "perf_read",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21460,
+      "metrics": [
+        {
+          "phase": "get_hit",
+          "ops": 10000,
+          "seconds": 0.00631482,
+          "ops_per_second": 1583580.0,
+          "p50_us": 0.521,
+          "p95_us": 0.962,
+          "p99_us": 1.481,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2925305
+        },
+        {
+          "phase": "get_miss",
+          "ops": 10000,
+          "seconds": 0.00130622,
+          "ops_per_second": 7655680.0,
+          "p50_us": 0.119,
+          "p95_us": 0.131,
+          "p99_us": 0.14,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2925305
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.6712463820003904,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/perf_reopen-n10000-t4-e50-r1/run.log",
+      "case": "perf_reopen",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21460,
+      "metrics": [
+        {
+          "phase": "open",
+          "ops": 1,
+          "seconds": 0.0238902,
+          "ops_per_second": 41.8581,
+          "p50_us": 23889.5,
+          "p95_us": 23889.5,
+          "p99_us": 23889.5,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 180393,
+          "db_directory_bytes_after_drain": 2933722
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.320150917978026,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/perf_scan-n10000-t4-e50-r1/run.log",
+      "case": "perf_scan",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21460,
+      "metrics": [
+        {
+          "phase": "scan",
+          "ops": 10000,
+          "seconds": 0.00198725,
+          "ops_per_second": 5032090.0,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2925305
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.3207966629997827,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/perf_stats-n10000-t4-e50-r1/run.log",
+      "case": "perf_stats",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21460,
+      "metrics": [
+        {
+          "phase": "stats_query",
+          "ops": 10000,
+          "seconds": 0.00112536,
+          "ops_per_second": 8886050.0,
+          "p50_us": 0.027,
+          "p95_us": 0.028,
+          "p99_us": 0.029,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 2925306
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 1.0715805840445682,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/perf_stats_under_write-n10000-t4-e50-r1/run.log",
+      "case": "perf_stats_under_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21460,
+      "metrics": [
+        {
+          "phase": "put_without_stats_queries",
+          "ops": 10000,
+          "seconds": 0.245381,
+          "ops_per_second": 40752.9,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 7851586,
+          "db_directory_bytes_after_drain": 6065046
+        },
+        {
+          "phase": "put_with_stats_queries",
+          "ops": 10000,
+          "seconds": 0.234345,
+          "ops_per_second": 42672.1,
+          "p50_us": 0,
+          "p95_us": 0,
+          "p99_us": 0,
+          "latency_samples": 0,
+          "append_bytes_during_phase": 7796388,
+          "db_directory_bytes_after_drain": 6065398
+        },
+        {
+          "phase": "stats_under_write",
+          "ops": 4277851,
+          "seconds": 0.23419,
+          "ops_per_second": 18266600.0,
+          "p50_us": 0.028,
+          "p95_us": 0.035,
+          "p99_us": 0.04,
+          "latency_samples": 66842,
+          "append_bytes_during_phase": 9364277,
+          "db_directory_bytes_after_drain": 6065398
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.5711407579947263,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/perf_ttl_gc-n10000-t4-e50-r1/run.log",
+      "case": "perf_ttl_gc",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21588,
+      "metrics": [
+        {
+          "phase": "ttl_full_gc",
+          "ops": 10000,
+          "seconds": 0.0308014,
+          "ops_per_second": 324661,
+          "p50_us": 30800.8,
+          "p95_us": 30800.8,
+          "p99_us": 30800.8,
+          "latency_samples": 1,
+          "append_bytes_during_phase": 57,
+          "db_directory_bytes_after_drain": 925470
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.3195992889814079,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/perf_ttl_mixed-n10000-t4-e50-r1/run.log",
+      "case": "perf_ttl_mixed",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21588,
+      "metrics": [
+        {
+          "phase": "ttl_mixed_get",
+          "ops": 10000,
+          "seconds": 0.00682885,
+          "ops_per_second": 1464380.0,
+          "p50_us": 0.55,
+          "p95_us": 0.986,
+          "p99_us": 1.351,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 0,
+          "db_directory_bytes_after_drain": 3007215
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.27056662196991965,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/perf_ttl_write-n10000-t4-e50-r1/run.log",
+      "case": "perf_ttl_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21588,
+      "metrics": [
+        {
+          "phase": "ttl_put",
+          "ops": 10000,
+          "seconds": 0.203894,
+          "ops_per_second": 49045.1,
+          "p50_us": 1.117,
+          "p95_us": 3.036,
+          "p99_us": 8.629,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 5925094,
+          "db_directory_bytes_after_drain": 3007822
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.2707628089701757,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/perf_write-n10000-t4-e50-r1/run.log",
+      "case": "perf_write",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21588,
+      "metrics": [
+        {
+          "phase": "put",
+          "ops": 10000,
+          "seconds": 0.197345,
+          "ops_per_second": 50672.6,
+          "p50_us": 1.053,
+          "p95_us": 2.378,
+          "p99_us": 4.311,
+          "latency_samples": 157,
+          "append_bytes_during_phase": 5656224,
+          "db_directory_bytes_after_drain": 2925526
+        }
+      ]
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.06909613101743162,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/ttl_contract-n10000-t4-e50-r1/run.log",
+      "case": "ttl_contract",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21588,
+      "metrics": []
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.17005834099836648,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/ttl_views-n10000-t4-e50-r1/run.log",
+      "case": "ttl_views",
+      "repeat": 1,
+      "seed": 7774596,
+      "keys": 10000,
+      "threads": 4,
+      "expired_percent": 50,
+      "peak_rss_kib": 21588,
+      "metrics": []
+    }
+  ],
+  "unit_tests": [
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.22006916598184034,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/metadata_test.log",
+      "target": "metadata_test",
+      "gtest": {
+        "tests": "3",
+        "failures": "0",
+        "disabled": "0",
+        "errors": "0",
+        "time": "0.165",
+        "timestamp": "2026-11-03T11:34:08.638",
+        "name": "AllTests"
+      }
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 44.84816007700283,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/ttl_test.log",
+      "target": "ttl_test",
+      "gtest": {
+        "tests": "2",
+        "failures": "0",
+        "disabled": "0",
+        "errors": "0",
+        "time": "44.791",
+        "timestamp": "2026-11-03T11:34:08.872",
+        "name": "AllTests"
+      }
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 104.73226086999057,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/leveldb_tests.log",
+      "target": "leveldb_tests",
+      "gtest": {
+        "tests": "275",
+        "failures": "0",
+        "disabled": "0",
+        "errors": "0",
+        "time": "104.67",
+        "timestamp": "2026-11-03T11:34:59.208",
+        "name": "AllTests"
+      }
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.5205560709582642,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/c_test.log",
+      "target": "c_test"
+    },
+    {
+      "status": "pass",
+      "returncode": 0,
+      "seconds": 0.03554094198625535,
+      "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/env_posix_test.log",
+      "target": "env_posix_test",
+      "gtest": {
+        "tests": "7",
+        "failures": "0",
+        "disabled": "0",
+        "errors": "0",
+        "time": "0.02",
+        "timestamp": "2026-11-03T11:36:51.133",
+        "name": "AllTests"
+      }
+    }
+  ],
+  "regression": {
+    "status": "pass",
+    "runs": [
+      {
+        "status": "pass",
+        "returncode": 0,
+        "seconds": 101.87460698996438,
+        "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/homework_regression.log",
+        "target": "homework_regression",
+        "gtest": {
+          "tests": "211",
+          "failures": "0",
+          "disabled": "0",
+          "errors": "0",
+          "time": "101.851",
+          "timestamp": "2026-11-03T11:36:51.185",
+          "name": "AllTests"
+        }
+      },
+      {
+        "status": "pass",
+        "returncode": 0,
+        "seconds": 0.4717567829648033,
+        "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/homework_c_regression.log",
+        "target": "homework_c_regression"
+      },
+      {
+        "status": "pass",
+        "returncode": 0,
+        "seconds": 0.03697117103729397,
+        "log": "/mnt/d/zzr/大四课程/数据库plus/project1/reproduction_20261103/homework_env_regression.log",
+        "target": "homework_env_regression",
+        "gtest": {
+          "tests": "7",
+          "failures": "0",
+          "disabled": "0",
+          "errors": "0",
+          "time": "0.024",
+          "timestamp": "2026-11-03T11:38:39.847",
+          "name": "AllTests"
+        }
+      }
+    ]
+  },
+  "build_seconds": 2.3214440870215185,
+  "profile": "quick",
+  "kind": "combined",
+  "full_suite": true,
+  "executed_cases": [
+    "combined_concurrent",
+    "combined_contract",
+    "combined_gc",
+    "combined_overwrites",
+    "combined_reopen",
+    "combined_views",
+    "metadata_contract",
+    "metadata_reopen",
+    "perf_combined_gc",
+    "perf_combined_stats_under_write",
+    "perf_concurrent",
+    "perf_read",
+    "perf_reopen",
+    "perf_scan",
+    "perf_stats",
+    "perf_stats_under_write",
+    "perf_ttl_gc",
+    "perf_ttl_mixed",
+    "perf_ttl_write",
+    "perf_write",
+    "ttl_contract",
+    "ttl_views"
+  ],
+  "original_runner_entrypoint_executed": false
+}
